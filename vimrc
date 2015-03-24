@@ -43,6 +43,7 @@ set hlsearch		                        		" highlight matches
 set incsearch			                        	" incremental searching
 set ignorecase			                       	" searches are case insensitive...
 set smartcase		                        		" ...unless they start with a capital letter
+:hi Search cterm=NONE ctermfg=grey ctermbg=52
 
 "" Prevent Vim creating files everywhere
 set nobackup
