@@ -8,6 +8,7 @@ call vundle#begin()
   Plugin 'thoughtbot/vim-rspec'
   Plugin 'ntpeters/vim-better-whitespace'
   Plugin 'tpope/vim-fugitive'
+  Plugin 'kien/ctrlp.vim'
 call vundle#end()
 
 "" RSpec.vim mappings
