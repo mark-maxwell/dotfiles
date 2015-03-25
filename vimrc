@@ -22,6 +22,11 @@ set background=dark
 colorscheme solarized
 syntax enable
 set laststatus=2                            " always show status line
+set statusline=%f                           " show complete file path
+set statusline+=\ %m                        " show [+] when file is modified
+set statusline+=%=                          " right align the following...
+set statusline+=%P                          " show percentage through file
+set statusline+=\ %l/%L                     " show current/total line number
 set scrolloff=7777                          " keep cursor centered
 set number                                  " show line numbers
 set colorcolumn=80                          " 80 character ruler
