@@ -17,6 +17,9 @@ map <Leader>s :call RunNearestSpec()<CR>
 map <Leader>l :call RunLastSpec()<CR>
 map <Leader>a :call RunAllSpecs()<CR>
 
+"" Ctags mappings
+map <Leader>c :!ctags --exclude=public --exclude=_html --exclude=tmp --exclude=log --exclude=coverage --exclude=vendor/bundle --extra=+f -R *<CR>
+
 "" Visual
 set background=dark
 colorscheme solarized
@@ -28,6 +31,7 @@ set statusline+=%=                          " right align the following...
 set statusline+=%P                          " show percentage through file
 set statusline+=\ %l/%L                     " show current/total line number
 set scrolloff=7777                          " keep cursor centered
+"set sidescrolloff=7777                      " ^^^ horizontal
 set number                                  " show line numbers
 set colorcolumn=80                          " 80 character ruler
 hi ColorColumn ctermbg=0                    " 17 for dark blue, 52 for dark red
