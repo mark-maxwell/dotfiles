@@ -21,7 +21,8 @@ map <Leader>a :call RunAllSpecs()<CR>
 set background=dark
 colorscheme solarized
 syntax enable
-set laststatus=2                            " always show status line
+set t_Co=256
+set laststatus=16                           " always show status line
 set statusline=%f                           " show complete file path
 set statusline+=\ %m                        " show [+] when file is modified
 set statusline+=%=                          " right align the following...
@@ -50,6 +51,7 @@ set incsearch			                        	" incremental searching
 set ignorecase			                       	" searches are case insensitive...
 set smartcase		                        		" ...unless they start with a capital letter
 :hi Search cterm=NONE ctermfg=grey ctermbg=52
+set wildignorecase
 
 "" Prevent Vim creating files everywhere
 set nobackup
