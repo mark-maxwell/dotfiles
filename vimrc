@@ -18,10 +18,10 @@ map <Leader>l :call RunLastSpec()<CR>
 map <Leader>a :call RunAllSpecs()<CR>
 
 "" Visual
+set t_Co=256
 set background=dark
 colorscheme solarized
 syntax enable
-set t_Co=256
 set laststatus=16                           " always show status line
 set statusline=%f                           " show complete file path
 set statusline+=\ %m                        " show [+] when file is modified
