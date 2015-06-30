@@ -2,7 +2,7 @@ set nocompatible		                      	" choose no compatibility with legacy v
 filetype on
 
 "" Vundle config
-set rtp+=~/.vim/bundle/Vundle.vim
+set rtp+=/usr/local/share/vim/vim74/bundle/Vundle.vim
 call vundle#begin()
   Plugin 'gmarik/vundle'
   Plugin 'thoughtbot/vim-rspec'
@@ -16,7 +16,6 @@ map <Leader>t :call RunCurrentSpecFile()<CR>
 map <Leader>s :call RunNearestSpec()<CR>
 map <Leader>l :call RunLastSpec()<CR>
 map <Leader>a :call RunAllSpecs()<CR>
-
 "" Ctags mappings
 map <Leader>c :!ctags --exclude=public --exclude=_html --exclude=tmp --exclude=log --exclude=coverage --exclude=vendor/bundle --extra=+f -R *<CR>
 
@@ -46,14 +45,32 @@ filetype plugin indent on	                	" load filetype plugins + indentation
 set nowrap			                          	" don't wrap lines
 set tabstop=2 shiftwidth=2	              	" a tab is 4 spaces (or set this to 4)
 set expandtab			                         	" use spaces, not tabs (optional)
-set backspace=indent,eol,start	          	" backspace through everthing in insert mode
+set backspace=indent,eol,start	          	" backspace through everything in insert mode
 
 "" Searching
 set hlsearch		                        		" highlight matches
 set incsearch			                        	" incremental searching
 set ignorecase			                       	" searches are case insensitive...
 set smartcase		                        		" ...unless they start with a capital letter
-:hi Search cterm=NONE ctermfg=grey ctermbg=52
+:hi Search cterm=NONE ctermfg=grey ctermbg=92 " http://vim.wikia.com/wiki/Xterm256_color_names_for_console_Vim?file=Xterm-color-table.png
+
+:set formatoptions-=cro                     " do not auto comment next line when the current line is commented
+
+"" Ignore files (CtrlP & autocompletion)
+set wildmode=list:longest,list:full
+set wildignore+=*.o,*.obj,.git,*.rbc,*.class,.svn,vendor,_html,doc
+
+"" The Silver Searcher
+if executable('ag')
+  " Use ag over grep
+  set grepprg=ag\ --nogroup\ --nocolor
+
+  " Use ag in CtrlP for listing files. Lightning fast and respects .gitignore
+  let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
+
+  " ag is fast enough that CtrlP doesn't need to cache
+  let g:ctrlp_use_caching = 0
+endif
 
 "" Prevent Vim creating files everywhere
 set nobackup
