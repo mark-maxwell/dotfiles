@@ -10,6 +10,7 @@ call vundle#begin()
   Plugin 'ntpeters/vim-better-whitespace'
   Plugin 'tpope/vim-fugitive'
   Plugin 'kien/ctrlp.vim'
+  Plugin 'valloric/MatchTagAlways'
 call vundle#end()
 
 "" RSpec.vim mappings
