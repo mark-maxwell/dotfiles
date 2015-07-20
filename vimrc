@@ -1,5 +1,6 @@
 set nocompatible		                      	" choose no compatibility with legacy vi
 filetype on
+set omnifunc=syntaxcomplete#Complete
 
 "" Vundle config
 set rtp+=/usr/local/share/vim/vim74/bundle/Vundle.vim
@@ -54,7 +55,7 @@ set ignorecase			                       	" searches are case insensitive...
 set smartcase		                        		" ...unless they start with a capital letter
 :hi Search cterm=NONE ctermfg=grey ctermbg=92 " http://vim.wikia.com/wiki/Xterm256_color_names_for_console_Vim?file=Xterm-color-table.png
 
-:set formatoptions-=cro                     " do not auto comment next line when the current line is commented
+autocmd FileType * setlocal formatoptions-=cro " do not auto comment next line when the current line is commented
 
 "" Ignore files (CtrlP & autocompletion)
 set wildmode=list:longest,list:full
