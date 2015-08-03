@@ -21,6 +21,9 @@ map <Leader>a :call RunAllSpecs()<CR>
 "" Ctags mappings
 map <Leader>c :!ctags --exclude=public --exclude=_html --exclude=tmp --exclude=log --exclude=coverage --exclude=vendor/bundle --extra=+f -R *<CR>
 
+"" Custom mappings
+map <Leader>g :Gblame<CR>
+
 "" Visual
 set background=dark
 colorscheme solarized
