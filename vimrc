@@ -23,6 +23,7 @@ map <Leader>c :!ctags --exclude=public --exclude=_html --exclude=tmp --exclude=l
 
 "" Custom mappings
 map <Leader>g :Gblame<CR>
+map <Leader>q :set cursorline!<CR>
 
 "" Visual
 set background=dark
