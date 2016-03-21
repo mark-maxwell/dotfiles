@@ -1,3 +1,4 @@
+let mapleader=" "
 set nocompatible		                      	" choose no compatibility with legacy vi
 filetype on
 set omnifunc=syntaxcomplete#Complete
@@ -15,15 +16,31 @@ call vundle#end()
 
 "" RSpec.vim mappings
 map <Leader>t :call RunCurrentSpecFile()<CR>
-map <Leader>s :call RunNearestSpec()<CR>
-map <Leader>l :call RunLastSpec()<CR>
+"map <Leader>s :call RunNearestSpec()<CR>
+map <Leader>p :call RunLastSpec()<CR>
 map <Leader>a :call RunAllSpecs()<CR>
+
 "" Ctags mappings
 map <Leader>c :!ctags --exclude=public --exclude=_html --exclude=tmp --exclude=log --exclude=coverage --exclude=vendor/bundle --extra=+f -R *<CR>
 
 "" Custom mappings
 map <Leader>g :Gblame<CR>
 map <Leader>q :set cursorline!<CR>
+
+"" Pane & Navigation mappings
+map <Leader>h <C-W>h  <CR>
+map <Leader>j <C-W>j  <CR>
+map <Leader>k <C-W>k  <CR>
+map <Leader>l <C-W>l  <CR>
+
+map <Leader>v :vs  <CR>
+map <Leader>s :sp  <CR>
+map <Leader>w :w  <CR>
+map <Leader>q :q  <CR>
+
+map <Leader>= <C-W>=  <CR>
+map <Leader>_ <C-W>_  <CR>
+map <Leader>\| <C-W>\|  <CR>
 
 "" Visual
 set background=dark
@@ -41,7 +58,7 @@ set number                                  " show line numbers
 set colorcolumn=80                          " 80 character ruler
 hi ColorColumn ctermbg=0                    " 17 for dark blue, 52 for dark red
 set cursorline                              " highlight the current line
-:hi CursorLine   cterm=NONE ctermbg=17
+:hi CursorLine   cterm=NONE ctermbg=0       " 17 for dark blue
 
 set encoding=utf-8
 set showcmd			                          	" display incomplete commands
