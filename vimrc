@@ -2,6 +2,7 @@ let mapleader=" "
 set nocompatible		                      	" choose no compatibility with legacy vi
 filetype on
 set omnifunc=syntaxcomplete#Complete
+set clipboard=unnamed
 
 "" Vundle config
 set rtp+=/usr/local/share/vim/vim74/bundle/Vundle.vim
