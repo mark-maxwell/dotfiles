@@ -29,19 +29,19 @@ map <Leader>g :Gblame<CR>
 map <Leader>q :set cursorline!<CR>
 
 "" Pane & Navigation mappings
-map <Leader>h <C-W>h  <CR>
-map <Leader>j <C-W>j  <CR>
-map <Leader>k <C-W>k  <CR>
-map <Leader>l <C-W>l  <CR>
+map <Leader>h <C-W>h
+map <Leader>j <C-W>j
+map <Leader>k <C-W>k
+map <Leader>l <C-W>l
 
 map <Leader>v :vs  <CR>
 map <Leader>s :sp  <CR>
 map <Leader>w :w  <CR>
 map <Leader>q :q  <CR>
 
-map <Leader>= <C-W>=  <CR>
-map <Leader>_ <C-W>_  <CR>
-map <Leader>\| <C-W>\|  <CR>
+map <Leader>= <C-W>=
+map <Leader>_ <C-W>_
+map <Leader>\| <C-W>\|
 
 "" Visual
 set background=dark
