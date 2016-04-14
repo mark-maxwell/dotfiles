@@ -2,10 +2,11 @@ let mapleader=" "
 set nocompatible		                      	" choose no compatibility with legacy vi
 filetype on
 set omnifunc=syntaxcomplete#Complete
-set clipboard=unnamed
+"set clipboard=unnamed
 
 "" Vundle config
-set rtp+=/usr/local/share/vim/vim74/bundle/Vundle.vim
+"set rtp+=/usr/local/share/vim/vim74/bundle/Vundle.vim
+set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
   Plugin 'gmarik/vundle'
   Plugin 'thoughtbot/vim-rspec'
@@ -38,6 +39,7 @@ map <Leader>v :vs  <CR>
 map <Leader>s :sp  <CR>
 map <Leader>w :w  <CR>
 map <Leader>q :q  <CR>
+map <Leader>n :tabnew  <CR>
 
 map <Leader>= <C-W>=
 map <Leader>_ <C-W>_
