@@ -106,3 +106,6 @@ set noswapfile
 "" Splitting panes
 set splitright                              " by default, open split to right instead of left
 set splitbelow                              " by default, open split below instead of above
+
+"" Saved macros
+let @h=':%s/:\(.*\) => "\(.*\)"/\1: "\2"'
