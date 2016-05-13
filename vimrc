@@ -39,6 +39,7 @@ map <Leader>v :vs  <CR>
 map <Leader>s :sp  <CR>
 map <Leader>w :w  <CR>
 map <Leader>q :q  <CR>
+map <Leader>x :x  <CR>
 map <Leader>n :tabnew  <CR>
 
 map <Leader>= <C-W>=
