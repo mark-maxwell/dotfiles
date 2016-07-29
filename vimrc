@@ -28,7 +28,8 @@ map <Leader>c :!ctags --exclude=public --exclude=_html --exclude=tmp --exclude=l
 
 "" Custom mappings
 map <Leader>g :Gblame<CR>
-map <Leader>q :set cursorline!<CR>
+map <Leader>z :set cursorline!<CR>
+map <Leader>e :Vexplore<CR>
 
 "" Pane & Navigation mappings
 map <Leader>h <C-W>h
