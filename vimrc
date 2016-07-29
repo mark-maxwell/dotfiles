@@ -112,3 +112,4 @@ set splitbelow                              " by default, open split below inste
 
 "" Saved macros
 let @h=':%s/:\(.*\) => "\(.*\)"/\1: "\2"'
+let @i="mm{V}=j'm"
