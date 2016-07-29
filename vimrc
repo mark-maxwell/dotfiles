@@ -3,6 +3,7 @@ set nocompatible		                      	" choose no compatibility with legacy v
 filetype on
 set omnifunc=syntaxcomplete#Complete
 "set clipboard=unnamed
+set timeoutlen=500                          " shortens delay caused by 'O' when creating a new line, whilst still being a reasonable time to enter leader key mappings
 
 "" Vundle config
 "set rtp+=/usr/local/share/vim/vim74/bundle/Vundle.vim
