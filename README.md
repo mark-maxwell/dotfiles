@@ -34,3 +34,11 @@ _then..._
 vim ~/.gitconfig
 #set "editor" to output ^
 ```
+-------------------------------------------------------------------------------
+
+## .bashrc
+###Loading bashrc
+Create a symlink to the version controlled bashrc file:
+```
+ln -s <path_to_bashrc_in_cloned_repo> ~/.bashrc
+```
