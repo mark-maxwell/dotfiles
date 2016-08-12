@@ -9,12 +9,12 @@ set timeoutlen=500                          " shortens delay caused by 'O' when 
 "set rtp+=/usr/local/share/vim/vim74/bundle/Vundle.vim
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
-  Plugin 'gmarik/vundle'
   Plugin 'thoughtbot/vim-rspec'
   Plugin 'ntpeters/vim-better-whitespace'
   Plugin 'tpope/vim-fugitive'
   Plugin 'kien/ctrlp.vim'
   Plugin 'valloric/MatchTagAlways'
+  Plugin 'tpope/vim-surround'
 call vundle#end()
 
 "" RSpec.vim mappings
@@ -52,6 +52,9 @@ map <Leader>\| <C-W>\|
 set background=dark
 colorscheme solarized
 syntax enable
+"hi StatusLine ctermfg=202
+hi StatuslineNC ctermfg=56
+hi VertSplit ctermfg=56 ctermbg=56
 set laststatus=2                            " always show status line
 set statusline=%f                           " show complete file path
 set statusline+=\ %m                        " show [+] when file is modified
@@ -111,5 +114,6 @@ set splitright                              " by default, open split to right in
 set splitbelow                              " by default, open split below instead of above
 
 "" Saved macros
-let @h=':%s/:\(.*\) => "\(.*\)"/\1: "\2"'
-let @i="mm{V}=j'm"
+let @h=':%s/:\(.*\) => "\(.*\)"/\1: "\2"'   " convert old ruby hash to new syntax
+let @i="mm{V}=j'm"                          " correctly indent current block of code
+let @c="mm{j}kI#'m"                     " comment out the current block of code
