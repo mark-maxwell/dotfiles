@@ -42,3 +42,11 @@ Create a symlink to the version controlled bashrc file:
 ```
 ln -s <path_to_bashrc_in_cloned_repo> ~/.bashrc
 ```
+-------------------------------------------------------------------------------
+
+##_Other dotfiles_
+###_.inputrc_
+_Create a smylink to the version controlled inputrc file:_
+```
+ln -s <path_to_inputrc_in_cloned_repo> ~/.inputrc
+```
