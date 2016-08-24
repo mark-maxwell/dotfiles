@@ -63,8 +63,7 @@ set statusline+=\ %m                        " show [+] when file is modified
 set statusline+=%=                          " right align the following...
 set statusline+=%P                          " show percentage through file
 set statusline+=\ %l/%L                     " show current/total line number
-set scrolloff=7777                          " keep cursor centered
-"set sidescrolloff=7777                      " ^^^ horizontal
+set scrolloff=0                          " keep cursor centered (7777). Set to 0 to use zt, zg, L, etc.
 set number                                  " show line numbers
 set colorcolumn=80                          " 80 character ruler
 hi ColorColumn ctermbg=0                    " 17 for dark blue, 52 for dark red
@@ -72,7 +71,7 @@ set cursorline                              " highlight the current line
 :hi CursorLine   cterm=NONE ctermbg=0       " 17 for dark blue
 
 set encoding=utf-8
-set showcmd			                          	" display incomplete commands
+set showcmd			                          	" display incomplete commands. Useful for pairing
 filetype plugin indent on	                	" load filetype plugins + indentation
 
 "" Whitespace
