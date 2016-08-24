@@ -85,7 +85,8 @@ set hlsearch		                        		" highlight matches
 set incsearch			                        	" incremental searching
 set ignorecase			                       	" searches are case insensitive...
 set smartcase		                        		" ...unless they start with a capital letter
-:hi Search cterm=NONE ctermfg=grey ctermbg=92 " http://vim.wikia.com/wiki/Xterm256_color_names_for_console_Vim?file=Xterm-color-table.png
+:hi Search cterm=NONE ctermfg=grey ctermbg=57 " http://vim.wikia.com/wiki/Xterm256_color_names_for_console_Vim?file=Xterm-color-table.png
+:hi IncSearch cterm=NONE ctermfg=grey ctermbg=57
 
 autocmd FileType * setlocal formatoptions-=cro " do not auto comment next line when the current line is commented
 
