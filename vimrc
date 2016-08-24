@@ -1,4 +1,5 @@
 let mapleader=" "
+let g:netrw_liststyle=3                     " set default :Explore pane view to mode 3 (indents directories)
 set nocompatible		                      	" choose no compatibility with legacy vi
 filetype on
 set omnifunc=syntaxcomplete#Complete
@@ -28,8 +29,9 @@ map <Leader>c :!ctags --exclude=public --exclude=_html --exclude=tmp --exclude=l
 
 "" Custom mappings
 map <Leader>g :Gblame<CR>
-map <Leader>z :set cursorline!<CR>
-map <Leader>e :Vexplore<CR>
+map <Leader>/ :set cursorline!<CR>
+map <Leader>e :Explore<CR>
+map <Leader>z :noh<CR>
 
 "" Pane & Navigation mappings
 map <Leader>h <C-W>h
