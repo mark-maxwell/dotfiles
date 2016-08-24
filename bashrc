@@ -7,7 +7,7 @@ function rvm_prompt {
   ~/.rvm/bin/rvm-prompt | sed -e 's/ruby-//g'
 }
 
-PURPLE="\[\033[38;5;135m\]"
+PURPLE="\[\033[38;5;99m\]"
 DPURPLE="\[\033[38;5;57m\]"
 BPURPLE="\[\033[38;5;93m\]"
 DBLUE="\[\033[38;5;57m\]"
@@ -15,9 +15,9 @@ MAGENTA="\[\033[38;5;198m\]"
 BTURQ="\[\033[38;5;51m\]"
 GTURQ="\[\033[38;5;50m\]"
 TGREEN="\[\033[38;5;122m\]"
-ORANGE="\[\033[38;5;203m\]"
+ORANGE="\[\033[38;5;202m\]"
 
-export PS1="$GTURQ--------- $GTURQ\t$GTURQ ---------\n $DPURPLE\w $MAGENTA\$(rvm_prompt)$BTURQ\$(parse_git_branch)$DPURPLE ∫\[\033[0m\] "
+export PS1="$DPURPLE--------- $DPURPLE\t$DPURPLE ---------\n $PURPLE\w $MAGENTA\$(rvm_prompt)$BTURQ\$(parse_git_branch)$DPURPLE ∫\[\033[0m\] "
 export PATH="/usr/local/bin:$PATH"
 export PATH="/usr/local/sbin:$PATH"
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
