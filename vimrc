@@ -16,6 +16,7 @@ call vundle#begin()
   Plugin 'kien/ctrlp.vim'
   Plugin 'valloric/MatchTagAlways'
   Plugin 'tpope/vim-surround'
+  Plugin 'mark-maxwell/vim-spec-split'
 call vundle#end()
 
 "" RSpec.vim mappings
@@ -119,11 +120,3 @@ set splitbelow                              " by default, open split below inste
 let @h=':%s/:\(.*\) => "\(.*\)"/\1: "\2"'   " convert old ruby hash to new syntax
 let @i="mm{V}=j'm"                          " correctly indent current block of code
 let @c="mm{j}kI#'m"                     " comment out the current block of code
-
-function! Vspec()
-  let s:current_file = @%
-  let s:partial_match = matchstr(s:current_file,'\(/[a-z]*\)\+\(\(_[a-z]*\)\?\)\+')
-  let s:assoc_spec_file = 'spec' . s:partial_match . '_spec.rb'
-
-  execute ":vs " . s:assoc_spec_file
-endfunction
