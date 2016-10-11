@@ -20,10 +20,15 @@ call vundle#begin()
 call vundle#end()
 
 "" RSpec.vim mappings
-map <Leader>t :call RunCurrentSpecFile()<CR>
+"map <Leader>t :call RunCurrentSpecFile()<CR>
 "map <Leader>s :call RunNearestSpec()<CR>
 map <Leader>p :call RunLastSpec()<CR>
 map <Leader>a :call RunAllSpecs()<CR>
+
+"" spec-split.vim mappings
+map <Leader>t :call RunAssocSpec()<CR>
+map <Leader>r :call Vspec()<CR>
+map <Leader>d :call Hspec()<CR>
 
 "" Ctags mappings
 map <Leader>c :!ctags --exclude=public --exclude=_html --exclude=tmp --exclude=log --exclude=coverage --exclude=vendor/bundle --extra=+f -R *<CR>
@@ -68,7 +73,7 @@ set scrolloff=0                          " keep cursor centered (7777). Set to 0
 set number                                  " show line numbers
 set colorcolumn=80                          " 80 character ruler
 hi ColorColumn ctermbg=0                    " 17 for dark blue, 52 for dark red
-set cursorline                              " highlight the current line
+"set cursorline                              " highlight the current line
 :hi CursorLine   cterm=NONE ctermbg=0       " 17 for dark blue
 
 set encoding=utf-8
@@ -87,7 +92,7 @@ set incsearch			                        	" incremental searching
 set ignorecase			                       	" searches are case insensitive...
 set smartcase		                        		" ...unless they start with a capital letter
 :hi Search cterm=NONE ctermfg=grey ctermbg=57 " http://vim.wikia.com/wiki/Xterm256_color_names_for_console_Vim?file=Xterm-color-table.png
-:hi IncSearch cterm=NONE ctermfg=grey ctermbg=57
+:hi IncSearch cterm=NONE ctermfg=grey ctermbg=161
 
 autocmd FileType * setlocal formatoptions-=cro " do not auto comment next line when the current line is commented
 
