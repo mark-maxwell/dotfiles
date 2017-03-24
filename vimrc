@@ -26,12 +26,12 @@ map <Leader>p :call RunLastSpec()<CR>
 map <Leader>a :call RunAllSpecs()<CR>
 
 "" spec-split.vim mappings
-map <Leader>t :call RunAssocSpec()<CR>
+map <Leader>t :w \| :call RunAssocSpec()<CR>
 map <Leader>r :call Vspec()<CR>
 map <Leader>d :call Hspec()<CR>
 
 "" Ctags mappings
-map <Leader>c :!ctags --exclude=public --exclude=_html --exclude=tmp --exclude=log --exclude=coverage --exclude=vendor/bundle --extra=+f -R *<CR>
+map <Leader>c :!ctags --exclude=public --exclude=_html --exclude=tmp --exclude=log --exclude=coverage --exclude=vendor/bundle --exclude=node_modules --extra=+f -R *<CR>
 
 "" Custom mappings
 map <Leader>g :Gblame<CR>
