@@ -1,4 +1,4 @@
-let mapleader=" "
+let mapleader=","
 let g:netrw_liststyle=3                     " set default :Explore pane view to mode 3 (indents directories)
 set nocompatible		                      	" choose no compatibility with legacy vi
 filetype on
@@ -60,7 +60,7 @@ map <Leader>\| <C-W>\|
 set background=dark
 colorscheme solarized
 syntax enable
-"hi StatusLine ctermfg=202
+hi StatusLine ctermfg=55
 hi StatuslineNC ctermfg=56
 hi VertSplit ctermfg=56 ctermbg=56
 set laststatus=2                            " always show status line
