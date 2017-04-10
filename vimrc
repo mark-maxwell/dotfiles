@@ -40,10 +40,10 @@ map <Leader>e :Explore<CR>
 map <Leader>z :noh<CR>
 
 "" Pane & Navigation mappings
-map <Leader>h <C-W>h
-map <Leader>j <C-W>j
-map <Leader>k <C-W>k
-map <Leader>l <C-W>l
+nmap <C-H> <C-W>h
+nmap <C-j> <C-W>j
+nmap <C-k> <C-W>k
+nmap <C-l> <C-W>l
 
 map <Leader>v :vs  <CR>
 map <Leader>s :sp  <CR>
