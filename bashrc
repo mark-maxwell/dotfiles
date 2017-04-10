@@ -42,6 +42,7 @@ alias fs="bundle exec foreman start"
 alias gs="git status"
 alias gb="git branch"
 alias gd="git diff"
+alias gg="git grep"
 alias gp="git pull"
 alias glog='git log --oneline --abbrev-commit --all --graph --decorate'
 alias glogm="git log --author='Mark Maxwell'"
