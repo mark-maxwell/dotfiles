@@ -40,6 +40,7 @@ map <Leader>g :Gblame<CR>
 map <Leader>/ :set cursorline!<CR>
 map <Leader>e :Vexplore<CR>
 map <Leader>z :noh<CR>
+map <Leader>p "*p<CR>
 
 "" Pane & Navigation mappings
 nmap <C-H> <C-W>h
