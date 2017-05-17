@@ -1,5 +1,7 @@
 let mapleader=","
 let g:netrw_liststyle=3                     " set default :Explore pane view to mode 3 (indents directories)
+let g:netrw_browse_split = 2                " open files with netrw in a vertical split pane
+let g:netrw_winsize = 25                    " set explorer pane size to 25%
 set nocompatible		                      	" choose no compatibility with legacy vi
 filetype on
 set omnifunc=syntaxcomplete#Complete
@@ -36,7 +38,7 @@ map <Leader>c :!ctags --exclude=public --exclude=_html --exclude=tmp --exclude=l
 "" Custom mappings
 map <Leader>g :Gblame<CR>
 map <Leader>/ :set cursorline!<CR>
-map <Leader>e :Explore<CR>
+map <Leader>e :Vexplore<CR>
 map <Leader>z :noh<CR>
 
 "" Pane & Navigation mappings
