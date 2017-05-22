@@ -24,7 +24,7 @@ call vundle#end()
 "" RSpec.vim mappings
 "map <Leader>t :call RunCurrentSpecFile()<CR>
 "map <Leader>s :call RunNearestSpec()<CR>
-map <Leader>p :call RunLastSpec()<CR>
+"map <Leader>p :call RunLastSpec()<CR>
 map <Leader>a :call RunAllSpecs()<CR>
 
 "" spec-split.vim mappings
@@ -34,13 +34,6 @@ map <Leader>d :call Hspec()<CR>
 
 "" Ctags mappings
 map <Leader>c :!ctags --exclude=public --exclude=_html --exclude=tmp --exclude=log --exclude=coverage --exclude=vendor/bundle --exclude=node_modules --extra=+f -R *<CR>
-
-"" Custom mappings
-map <Leader>g :Gblame<CR>
-map <Leader>/ :set cursorline!<CR>
-map <Leader>e :Vexplore<CR>
-map <Leader>z :noh<CR>
-map <Leader>p "*p<CR>
 
 "" Pane & Navigation mappings
 nmap <C-H> <C-W>h
@@ -58,6 +51,14 @@ map <Leader>n :tabnew  <CR>
 map <Leader>= <C-W>=
 map <Leader>_ <C-W>_
 map <Leader>\| <C-W>\|
+
+map <Leader>e :Vexplore<CR>
+
+"" Misc. mappings
+map <Leader>g :Gblame<CR>
+map <Leader>/ :set cursorline!<CR>
+map <Leader>z :noh<CR>
+map <Leader>p "*p<CR>
 
 "" Visual
 set background=dark
