@@ -17,6 +17,7 @@ call vundle#begin()
   Plugin 'tpope/vim-fugitive'
   Plugin 'kien/ctrlp.vim'
   Plugin 'valloric/MatchTagAlways'
+  Plugin 'tpope/vim-endwise'
   Plugin 'tpope/vim-surround'
   Plugin 'mark-maxwell/vim-spec-split'
 call vundle#end()
@@ -59,6 +60,9 @@ map <Leader>g :Gblame<CR>
 map <Leader>/ :set cursorline!<CR>
 map <Leader>z :noh<CR>
 map <Leader>p "*p<CR>
+
+"" Insert mode mappings
+imap <C-j> <CR>
 
 "" Visual
 set background=dark
