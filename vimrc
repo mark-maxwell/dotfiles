@@ -83,6 +83,7 @@ set colorcolumn=80                          " 80 character ruler
 hi ColorColumn ctermbg=0                    " 17 for dark blue, 52 for dark red
 "set cursorline                              " highlight the current line
 :hi CursorLine   cterm=NONE ctermbg=0       " 17 for dark blue
+hi Pmenu ctermfg=56 ctermbg=250             " set colors for autocomplete box
 
 set encoding=utf-8
 set showcmd			                          	" display incomplete commands. Useful for pairing
