@@ -71,8 +71,8 @@ imap <C-j> <CR>
 set background=dark
 colorscheme solarized
 syntax enable
-hi StatusLine ctermfg=55
-hi StatuslineNC ctermfg=56
+hi StatusLine ctermfg=162                   " color of active statusline. 55 for purple
+hi StatuslineNC ctermfg=56 ctermbg=146
 hi VertSplit ctermfg=56 ctermbg=56
 set laststatus=2                            " always show status line
 set statusline=%f                           " show complete file path
