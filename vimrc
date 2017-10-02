@@ -20,7 +20,10 @@ call vundle#begin()
   Plugin 'tpope/vim-endwise'
   Plugin 'tpope/vim-surround'
   Plugin 'mark-maxwell/vim-spec-split'
+  Plugin 'rodjek/vim-puppet'
 call vundle#end()
+
+au BufRead,BufNewFile *.pp   setfiletype puppet "enable vim-puppet to syntax highlight these files
 
 "" RSpec.vim mappings
 "map <Leader>t :call RunCurrentSpecFile()<CR>
