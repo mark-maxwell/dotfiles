@@ -24,9 +24,9 @@ export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 export PATH="/usr/local/heroku/bin:$PATH" ### Added by the Heroku Toolbelt
 export EDITOR='vim'
 
-# alias lock='/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend'
 alias lock='open -a /System/Library/Frameworks/ScreenSaver.framework/Versions/A/Resources/ScreenSaverEngine.app'
 alias subl="open -a 'Sublime Text 2'"
+alias beep3="osascript -e 'beep 3'" # <command>;beep3 <-- when running a process that takes a long time
 
 # better ls = directories in color
 alias ls='ls -G'
