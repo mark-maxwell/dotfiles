@@ -1,6 +1,6 @@
 let mapleader=","
 let g:netrw_liststyle=3                     " set default :Explore pane view to mode 3 (indents directories)
-let g:netrw_browse_split = 2                " open files with netrw in a vertical split pane
+let g:netrw_browse_split = 0                " open files with netrw in a vertical split pane
 "let g:netrw_winsize = 25                    " set explorer pane size to 25%
 set nocompatible		                      	" choose no compatibility with legacy vi
 filetype on
@@ -24,6 +24,7 @@ call vundle#begin()
 call vundle#end()
 
 au BufRead,BufNewFile *.pp   setfiletype puppet "enable vim-puppet to syntax highlight these files
+let g:puppet_align_hashes = 0                   " no automatic hash alignment
 
 "" RSpec.vim mappings
 "map <Leader>t :call RunCurrentSpecFile()<CR>
