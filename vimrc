@@ -57,6 +57,10 @@ map <Leader>= <C-W>=
 map <Leader>_ <C-W>_
 map <Leader>\| <C-W>\|
 
+"" Expand ctags 'jump to definition' behaviour <C-W>] available by default: jump to definition in horizontal split
+map <Leader><C-]> :vsp <CR>:exec("tag ".expand("<cword>"))<CR>
+map <Leader><C-t> :tab split<CR>:exec("tag ".expand("<cword>"))<CR>
+
 map <Leader>e :Vexplore<CR>
 
 "" Misc. mappings
