@@ -57,7 +57,8 @@ map <Leader><C-t> :tab split<CR>:exec("tag ".expand("<cword>"))<CR>
 map <Leader>e :Vexplore<CR>
 
 "" Misc. mappings
-map <Leader>g :Gblame<CR>
+map <Leader>G :Gblame<CR>
+map <Leader>g :!clear<CR>:grep --color <cword>*<CR>
 map <Leader>/ :set cursorline!<CR>
 map <Leader>z :noh<CR>
 map <Leader>p "*p<CR>
