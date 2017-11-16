@@ -12,7 +12,6 @@ set timeoutlen=500                          " shortens delay caused by 'O' when 
 "set rtp+=/usr/local/share/vim/vim74/bundle/Vundle.vim
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
-  Plugin 'thoughtbot/vim-rspec'
   Plugin 'ntpeters/vim-better-whitespace'
   Plugin 'tpope/vim-fugitive'
   Plugin 'kien/ctrlp.vim'
@@ -25,12 +24,6 @@ call vundle#end()
 
 au BufRead,BufNewFile *.pp   setfiletype puppet "enable vim-puppet to syntax highlight these files
 let g:puppet_align_hashes = 0                   " no automatic hash alignment
-
-"" RSpec.vim mappings
-"map <Leader>t :call RunCurrentSpecFile()<CR>
-"map <Leader>s :call RunNearestSpec()<CR>
-"map <Leader>p :call RunLastSpec()<CR>
-map <Leader>a :call RunAllSpecs()<CR>
 
 "" spec-split.vim mappings
 map <Leader>t :w \| :call RunAssocSpec()<CR>
