@@ -137,3 +137,4 @@ let @h=':%s/:\(.*\) => "\(.*\)"/\1: "\2"'   " convert old ruby hash to new synta
 let @i="mm{V}=j'm"                          " correctly indent current block of code
 let @c="mm{j}kI#'m"                     " comment out the current block of code
 let @y=":let @+=@%"                       " copy the current filepath to the system clipboard
+let @v=":e ~/.vim/vimrc"
