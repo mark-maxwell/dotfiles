@@ -10,7 +10,6 @@
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
 
 set $mod Mod4
-
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
 #font pango:monospace 8
@@ -174,7 +173,7 @@ exec --no-startup-id feh --bg-scale ~/Downloads/firewatch-orange-pixel-art-backg
 bindsym $mod+Shift+s exec scrot -s ~/Pictures/Screenshots/%Y-%m-%d-%H-%M-%S.png
 
 # Colors
-client.focused #1C1C1C #4A00DD #C4C4C4 #4A00DD #ffffff
+client.focused #1C1C1C #4A00DD #C4C4C4 #4A00DD #D03F0E
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
@@ -191,3 +190,13 @@ bar {
   tray_output primary
 }
 
+# Gaps
+smart_gaps on
+gaps inner 10
+gaps outer 10
+gaps horizontal 10
+gaps vertical 10
+gaps top 10
+gaps right 10
+gaps bottom 10
+gaps left 10
