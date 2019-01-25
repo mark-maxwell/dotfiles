@@ -1,0 +1,32 @@
+!visual
+URxvt.font: 9x15
+URxvt.background: black
+URxvt.foreground: white
+URxvt.scrollBar: false
+
+!fake transparency
+urxvt*transparent: true
+urxvt*shading: 30
+
+!to be updated for 15 colors
+*color0: #000000
+*color0: #000000
+*color0: #000000
+*color0: #000000
+*color0: #000000
+*color0: #000000
+*color0: #000000
+*color0: #000000
+*color0: #000000
+*color0: #000000
+*color0: #000000
+*color0: #000000
+*color0: #000000
+*color0: #000000
+*color0: #000000
+
+!bindings
+URxvt.iso14755: false
+URxvt.iso14755_52: false
+URxvt.keysym.Shift-Control-V: eval:paste_clipboard
+URxvt.keysym.Shift-Control-C: eval:selection_to_clipboard
