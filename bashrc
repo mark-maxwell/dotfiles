@@ -1,15 +1,55 @@
-# current git branch on command line
-function parse_git_branch () {
-  git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ \1/'
-}
+# Terminal should really set this rather than shell, but Terminator is bad at this
+TERM=xterm-256color
 
-function rvm_prompt {
-  ~/.rvm/bin/rvm-prompt | sed -e 's/ruby-//g'
-}
+if [ -f /usr/local/share/chruby/chruby.sh ]; then
+  source /usr/local/share/chruby/chruby.sh
+  chruby 2.5
+  source /usr/local/share/chruby/auto.sh
+fi
 
-PURPLE="\[\033[38;5;99m\]"
+if [ -f ~/.bashrc_system_default ]; then
+  # until I have had chance to go through all these defaults
+  source ~/.bashrc_system_default
+fi
+
+if [ -f ~/Code/bash_scripts/command_line/otb_navigation.sh ]; then
+  source ~/Code/bash_scripts/command_line/otb_navigation.sh
+fi
+
+if [ -f ~/Code/bash_scripts/command_line/who_deployed.sh ]; then
+  source ~/Code/bash_scripts/command_line/who_deployed.sh
+fi
+
+if [ -f ~/.nvmrc ]; then
+  source ~/.nvmrc
+fi
+
+# Helpful general aliases
+alias pbcopy="xclip -selection clipboard"
+alias be="bundle exec"
+alias fs="bundle exec foreman start"
+alias ocred="cat ~/Documents/otb_various_credentials.txt"
+alias acred="cat ~/Documents/otb_amazon_resource_creds.txt"
+
+alias ls='ls --color=auto -GF'
+alias grep="grep --color=auto"
+alias fgrep="fgrep --color=auto"
+alias egrep="egrep --color=auto"
+
+# git aliases
+alias gs="git status"
+alias gb="git branch"
+alias gd="git diff"
+alias gl="git log"
+alias gp="git pull"
+alias gg="git grep"
+alias glogm="git log --author='Mark Maxwell'"
+
+# colors for bash prompt
+PURPLE="\[\033[38;5;69m\]"
 DPURPLE="\[\033[38;5;57m\]"
 BPURPLE="\[\033[38;5;93m\]"
+BLUE="\[\033[38;5;45m\]"
 DBLUE="\[\033[38;5;57m\]"
 MAGENTA="\[\033[38;5;198m\]"
 BTURQ="\[\033[38;5;51m\]"
@@ -17,36 +57,22 @@ GTURQ="\[\033[38;5;50m\]"
 TGREEN="\[\033[38;5;122m\]"
 ORANGE="\[\033[38;5;202m\]"
 
-export PS1="$DPURPLE--------- $DPURPLE\t$DPURPLE ---------\n $PURPLE\w $MAGENTA\$(rvm_prompt)$BTURQ\$(parse_git_branch)$DPURPLE ∫\[\033[0m\] "
-export PATH="/usr/local/bin:$PATH"
-export PATH="/usr/local/sbin:$PATH"
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
-export PATH="/usr/local/heroku/bin:$PATH" ### Added by the Heroku Toolbelt
-export EDITOR='vim'
+export PS1="\n $BLUE\t\n $PURPLE\w$MAGENTA\$(ruby_prompt)$BTURQ\$(parse_git_branch)$PURPLE ∫\[\033[0m\] "
+export EDITOR=vim
+# change ls command directory color
 
-alias lock='open -a /System/Library/Frameworks/ScreenSaver.framework/Versions/A/Resources/ScreenSaverEngine.app'
-alias subl="open -a 'Sublime Text 2'"
-alias beep3="osascript -e 'beep 3'" # <command>;beep3 <-- when running a process that takes a long time
+LS_COLORS=$LS_COLORS:'di=1;35:' ; export LS_COLORS
 
-# better ls = directories in color
-alias ls='ls -G'
+function parse_git_branch() {
+  git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ \1/'
+}
 
-# grep with color
-alias grep='grep --color=auto'
+function ruby_prompt() {
+  ruby -v 2> /dev/null | sed -e 's/ruby//g; s/p.*//g'
+  #echo $RUBY_VERSION 2> /dev/null
+}
 
-# naughty shortcuts
-alias be="bundle exec"
-alias fs="bundle exec foreman start"
-
-# git
-alias gs="git status"
-alias gb="git branch"
-alias gd="git diff"
-alias gg="git grep"
-alias gp="git pull"
-alias glog='git log --oneline --abbrev-commit --all --graph --decorate'
-alias glogm="git log --author='Mark Maxwell'"
-alias gslog="git log --format='%Cred%h%Creset %s %Cgreen(%cr) %C(blue)<%an>%Creset%C(yellow)%d%Creset' --no-merges"
-
-# generate ctags for ruby projects
-alias genctags="ctags --exclude=public --exclude=_html --exclude=tmp --exclude=log --exclude=coverage --exclude=vendor/bundle --extra=+f -R *"
+function tabset() {
+  tabTitle=$1
+  export PROMPT_COMMAND='echo -ne "\033]0;$tabTitle\007"'
+}
