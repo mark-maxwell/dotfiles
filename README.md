@@ -1,52 +1,6 @@
 # Dotfiles
 
-## .vimrc
-### Loading vimrc
-
-Vim will look inside ~/.vim/ automatically for a vimrc file.
-Create a symlink to the version controlled vimrc file:
-```
-ln -s <path_to_vimrc_in_cloned_repo> ~/.vim/vimrc
-```
-
-### Installing plugins
-```
-git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-```
-
-Open vim and:
-```
-:PluginInstall
-```
-
-###_Other vim setup for fresh install:_
-*Place the following in an .<file_name>rc file to be loaded when initializing shell.*
-```
-export EDITOR='vim'
-```
-
-_Set editor used when creating git commits:_
-```
-which vim
-```
-_then..._
-```
-vim ~/.gitconfig
-#set "editor" to output ^
-```
--------------------------------------------------------------------------------
-
-## .bashrc
-###Loading bashrc
-Create a symlink to the version controlled bashrc file:
-```
-ln -s <path_to_bashrc_in_cloned_repo> ~/.bashrc
-```
--------------------------------------------------------------------------------
-
-##_Other dotfiles_
-###_.inputrc_
-_Create a smylink to the version controlled inputrc file:_
-```
-ln -s <path_to_inputrc_in_cloned_repo> ~/.inputrc
-```
+## Creating symbolic links
+- clone repo
+- `cd` into cloned repo
+- create symbolic links for each file: `ln -s <path_to_file_in_repo> <path_to_target_location>
