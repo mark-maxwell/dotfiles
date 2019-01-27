@@ -25,11 +25,11 @@ font pango:DejaVu Sans Mono 8
 # X core fonts rendering does not support right-to-left and this being a bitmap
 # font, it doesn’t scale on retina/hidpi displays.
 
-# Remove titlebar from applications and show blue outline
+# Remove titlebar from applications
 new_window pixel
 
-# Use Mouse+$mod to drag floating windows to their wanted position
-floating_modifier $mod
+# Disable border for solo windows
+hide_edge_borders both
 
 # start a terminal
 bindsym $mod+Return exec urxvt
