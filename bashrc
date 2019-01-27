@@ -59,8 +59,8 @@ ORANGE="\[\033[38;5;202m\]"
 
 export PS1="\n $BLUE\t\n $PURPLE\w$MAGENTA\$(ruby_prompt)$BTURQ\$(parse_git_branch)$PURPLE ∫\[\033[0m\] "
 export EDITOR=vim
-# change ls command directory color
 
+# change ls command directory color
 LS_COLORS=$LS_COLORS:'di=1;35:' ; export LS_COLORS
 
 function parse_git_branch() {
@@ -70,9 +70,4 @@ function parse_git_branch() {
 function ruby_prompt() {
   ruby -v 2> /dev/null | sed -e 's/ruby//g; s/p.*//g'
   #echo $RUBY_VERSION 2> /dev/null
-}
-
-function tabset() {
-  tabTitle=$1
-  export PROMPT_COMMAND='echo -ne "\033]0;$tabTitle\007"'
 }
