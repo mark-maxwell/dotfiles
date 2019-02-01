@@ -1,12 +1,15 @@
 !visual
-URxvt.font: 9x15
-URxvt.background: black
+!URxvt.font: 9x15
+URxvt*font: xft:DejaVuSansMono:pixelsize=15
+URxvt*boldFont: xft:DejaVuSansMono:bold:pixelsize=15
+URxvt*letterSpace: -1
+URxvt.background: #292C39
 URxvt.foreground: white
 URxvt.scrollBar: false
 
 !fake transparency
 urxvt*transparent: true
-urxvt*shading: 30
+urxvt*shading: 40
 
 !to be updated for 15 colors
 *color0: #000000
