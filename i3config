@@ -58,6 +58,7 @@ bindsym $mod+Shift+k move up
 bindsym $mod+Shift+l move right
 
 # stop focusing windows on mouse hover - require explicit click
+# NOTE: This disables mouse from automatically jumping to active workspace
 focus_follows_mouse no
 
 # split in horizontal orientation (Mod1=Alt)
