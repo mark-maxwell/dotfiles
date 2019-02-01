@@ -32,8 +32,8 @@ let g:puppet_align_hashes = 0                   " no automatic hash alignment
 set background=dark
 "colorscheme solarized
 syntax enable
-hi StatusLine ctermfg=16 ctermbg=63          " active statusline color
-hi StatuslineNC ctermfg=16 ctermbg=239       " inactive statusline color
+hi StatusLine ctermfg=16 ctermbg=63         " active statusline color
+hi StatuslineNC ctermfg=16 ctermbg=239      " inactive statusline color
 hi VertSplit ctermfg=0 ctermbg=NONE         " vertical split bar color
 set fillchars+=vert:│                       " set vertical split character to form line
 hi Visual cterm=bold ctermfg=8 ctermbg=99   " visual block selection color
@@ -48,8 +48,8 @@ set colorcolumn=80                          " 80 character ruler
 hi ColorColumn ctermbg=0                    " vertical ruler color
 hi CursorLine ctermfg=NONE ctermbg=0        " current line highlighting
 hi LineNr ctermfg=238                       " line number color
-hi TabLineFill ctermfg=63 ctermbg=0         " horizontal tab section separator
-hi TabLine ctermfg=63 ctermbg=0             " unselected tab colors
+hi TabLineFill ctermfg=16 ctermbg=0         " horizontal tab section separator
+hi TabLine ctermfg=244 ctermbg=0             " unselected tab colors
 hi TabLineSel ctermfg=63 ctermbg=0          " selected tab colors
 hi Pmenu ctermfg=56 ctermbg=250             " set colors for autocomplete box
 
