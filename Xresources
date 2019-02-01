@@ -11,22 +11,24 @@ URxvt.scrollBar: false
 urxvt*transparent: true
 urxvt*shading: 40
 
-!to be updated for 15 colors
-*color0: #000000
-*color0: #000000
-*color0: #000000
-*color0: #000000
-*color0: #000000
-*color0: #000000
-*color0: #000000
-*color0: #000000
-*color0: #000000
-*color0: #000000
-*color0: #000000
-*color0: #000000
-*color0: #000000
-*color0: #000000
-*color0: #000000
+!set 16 default terminal colors
+! https://docs.oracle.com/cd/E19728-01/820-2550/term_em_colormaps.html
+*color0: black
+*color1: red
+*color2: green
+*color3: yellow
+*color4: blue
+*color5: magenta
+*color6: cyan
+*color7: white
+*color8: black
+*color9: red
+*color10: green
+*color11: yellow
+*color12: blue
+*color13: magenta
+*color14: cyan
+*color15: white
 
 !bindings
 URxvt.iso14755: false
