@@ -36,7 +36,7 @@ hi StatusLine ctermfg=16 ctermbg=63         " active statusline color
 hi StatuslineNC ctermfg=16 ctermbg=239      " inactive statusline color
 hi VertSplit ctermfg=0 ctermbg=NONE         " vertical split bar color
 set fillchars+=vert:│                       " set vertical split character to form line
-hi Visual cterm=bold ctermfg=8 ctermbg=99   " visual block selection color
+hi Visual cterm=bold ctermfg=8 ctermbg=63   " visual block selection color
 set laststatus=2                            " always show status line
 set statusline=%f                           " show complete file path
 set statusline+=\ %m                        " show [+] when file is modified
@@ -49,7 +49,7 @@ hi ColorColumn ctermbg=0                    " vertical ruler color
 hi CursorLine ctermfg=NONE ctermbg=0        " current line highlighting
 hi LineNr ctermfg=238                       " line number color
 hi TabLineFill ctermfg=16 ctermbg=0         " horizontal tab section separator
-hi TabLine ctermfg=244 ctermbg=0             " unselected tab colors
+hi TabLine ctermfg=244 ctermbg=0            " unselected tab colors
 hi TabLineSel ctermfg=63 ctermbg=0          " selected tab colors
 hi Pmenu ctermfg=56 ctermbg=250             " set colors for autocomplete box
 
