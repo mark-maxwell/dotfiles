@@ -196,11 +196,11 @@ bar {
 
 # Gaps
 smart_gaps on
-gaps inner 10
-gaps outer 10
-gaps horizontal 10
-gaps vertical 10
-gaps top 10
-gaps right 10
-gaps bottom 10
-gaps left 10
+gaps inner 15
+gaps outer 15
+gaps horizontal 0
+gaps vertical 0
+gaps top 0
+gaps right 0
+gaps bottom 0
+gaps left 0
