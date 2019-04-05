@@ -32,6 +32,11 @@ URxvt.highlightColor: #5F87FF
 *color14: #8ec07c
 *color15: #fbf1c7
 
+!stop auto scrolling with buffer when manual scrolling
+URxvt*scrollTtyOutput:      false
+URxvt*scrollWithBuffer:     true
+URxvt*scrollTtyKeypress:    true
+
 !bindings
 URxvt.iso14755: false
 URxvt.iso14755_52: false
