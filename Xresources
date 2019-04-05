@@ -3,8 +3,8 @@
 URxvt*font: xft:DejaVuSansMono:pixelsize=15
 URxvt*boldFont: xft:DejaVuSansMono:bold:pixelsize=15
 URxvt*letterSpace: -1
-URxvt.background: #292C39
-URxvt.foreground: white
+URxvt.background: #282828
+URxvt.foreground: #FFD7AF
 URxvt.scrollBar: false
 URxvt*cursorColor: #FF0000
 URxvt.highlightColor: #5F87FF
@@ -16,21 +16,21 @@ URxvt.highlightColor: #5F87FF
 !set 16 default terminal colors
 !0:black 1:red r2:green 3:yellow 4:blue 5:magenta 6:cyan 7:white 8:black 9:red 10:green 11:yellow 12:blue 13:magenta 14:cyan 15:white
 *color0: black
-*color1: red
-*color2: green
-*color3: yellow
-*color4: blue
-*color5: magenta
-*color6: cyan
-*color7: white
+*color1: #cc241d
+*color2: #98971a
+*color3: #d79921
+*color4: #458588
+*color5: #b16286
+*color6: #689d6a
+*color7: #ffd7af
 *color8: black
-*color9: red
-*color10: green
-*color11: yellow
-*color12: blue
-*color13: magenta
-*color14: cyan
-*color15: white
+*color9: #fb4934
+*color10: #b8bb26
+*color11: #fabd2f
+*color12: #83a598
+*color13: #d3869b
+*color14: #8ec07c
+*color15: #fbf1c7
 
 !bindings
 URxvt.iso14755: false

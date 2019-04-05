@@ -29,14 +29,14 @@ au BufRead,BufNewFile *.pp   setfiletype puppet "enable vim-puppet to syntax hig
 let g:puppet_align_hashes = 0                   " no automatic hash alignment
 
 "" Visual
+colorscheme gruvbox
 set background=dark
-"colorscheme solarized
 syntax enable
-hi StatusLine ctermfg=16 ctermbg=63         " active statusline color
-hi StatuslineNC ctermfg=16 ctermbg=239      " inactive statusline color
+hi StatusLine ctermfg=16 ctermbg=9         " active statusline color
+hi StatuslineNC ctermfg=16 ctermbg=242      " inactive statusline color
 hi VertSplit ctermfg=0 ctermbg=NONE         " vertical split bar color
 set fillchars+=vert:│                       " set vertical split character to form line
-hi Visual cterm=bold ctermfg=8 ctermbg=63   " visual block selection color
+hi Visual cterm=bold ctermfg=0 ctermbg=3   " visual block selection color
 set laststatus=2                            " always show status line
 set statusline=%f                           " show complete file path
 set statusline+=\ %m                        " show [+] when file is modified
@@ -47,11 +47,11 @@ set number                                  " show line numbers
 set colorcolumn=80                          " 80 character ruler
 hi ColorColumn ctermbg=0                    " vertical ruler color
 hi CursorLine ctermfg=NONE ctermbg=0        " current line highlighting
-hi LineNr ctermfg=238                       " line number color
+hi LineNr ctermfg=239                       " line number color
 hi TabLineFill ctermfg=16 ctermbg=0         " horizontal tab section separator
 hi TabLine ctermfg=244 ctermbg=0            " unselected tab colors
 hi TabLineSel ctermfg=63 ctermbg=0          " selected tab colors
-hi Pmenu ctermfg=56 ctermbg=250             " set colors for autocomplete box
+hi Pmenu ctermfg=111 ctermbg=242             " set colors for autocomplete box
 
 "" Cursor colors
 if &term =~ "xterm\\|rxvt"
@@ -75,8 +75,8 @@ set hlsearch		                        		" highlight matches
 set incsearch			                        	" incremental searching
 set ignorecase			                       	" searches are case insensitive...
 set smartcase		                        		" ...unless they start with a capital letter
-:hi Search cterm=NONE ctermfg=0 ctermbg=63
-:hi IncSearch cterm=NONE ctermfg=250 ctermbg=63
+:hi Search cterm=NONE ctermfg=0 ctermbg=1
+:hi IncSearch cterm=NONE ctermfg=3 ctermbg=1
 
 "" Auto commmands
 autocmd FileType * setlocal formatoptions-=cro " do not auto comment next line when the current line is commented
