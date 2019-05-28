@@ -75,8 +75,8 @@ set hlsearch		                        		" highlight matches
 set incsearch			                        	" incremental searching
 set ignorecase			                       	" searches are case insensitive...
 set smartcase		                        		" ...unless they start with a capital letter
-:hi Search cterm=NONE ctermfg=255 ctermbg=1
-:hi IncSearch cterm=NONE ctermfg=0 ctermbg=255
+:hi Search cterm=NONE ctermfg=255 ctermbg=135
+:hi IncSearch cterm=NONE ctermfg=135 ctermbg=255
 
 "" Auto commmands
 autocmd FileType * setlocal formatoptions-=cro " do not auto comment next line when the current line is commented
