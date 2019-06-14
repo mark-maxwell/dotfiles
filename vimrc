@@ -36,7 +36,7 @@ hi StatusLine ctermfg=16 ctermbg=9         " active statusline color
 hi StatuslineNC ctermfg=16 ctermbg=242      " inactive statusline color
 hi VertSplit ctermfg=0 ctermbg=NONE         " vertical split bar color
 set fillchars+=vert:│                       " set vertical split character to form line
-hi Visual cterm=bold ctermfg=0 ctermbg=3   " visual block selection color
+hi Visual cterm=bold ctermfg=0 ctermbg=36   " visual block selection color
 set laststatus=2                            " always show status line
 set statusline=%f                           " show complete file path
 set statusline+=\ %m                        " show [+] when file is modified
