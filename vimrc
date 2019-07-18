@@ -56,7 +56,7 @@ hi Pmenu ctermfg=111 ctermbg=242             " set colors for autocomplete box
 "" Cursor colors
 if &term =~ "xterm\\|rxvt"
   " insert mode color (t_SI sent by vim when entering insert mode)
-  let &t_SI = "\<Esc>]12;magenta\x7"
+  let &t_SI = "\<Esc>]12;cyan\x7"
   " other modes color (t_EI sent by vim when leaving insert mode)
   let &t_EI = "\<Esc>]12;red\x7"
   silent !echo -ne "\033]12;red\007"
@@ -75,8 +75,8 @@ set hlsearch		                        		" highlight matches
 set incsearch			                        	" incremental searching
 set ignorecase			                       	" searches are case insensitive...
 set smartcase		                        		" ...unless they start with a capital letter
-:hi Search cterm=NONE ctermfg=255 ctermbg=135
-:hi IncSearch cterm=NONE ctermfg=135 ctermbg=255
+:hi Search cterm=NONE ctermfg=232 ctermbg=141
+:hi IncSearch cterm=NONE ctermfg=141 ctermbg=232
 
 "" Auto commmands
 autocmd FileType * setlocal formatoptions-=cro " do not auto comment next line when the current line is commented
