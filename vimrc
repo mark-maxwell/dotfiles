@@ -1,6 +1,7 @@
 let mapleader=","
 let g:netrw_liststyle=3                     " set default :Explore pane view to mode 3 (indents directories)
-let g:netrw_browse_split = 0                " open files with netrw in a vertical split pane
+let g:netrw_browse_split = 0                " using <cr> will open file in current window (replacing netrw explorer)
+let g:netrw_winsize = 75                    " set initial size of windows created with v/o etc.
 set nocompatible		                      	" choose no compatibility with legacy vi
 set backspace=indent,eol,start
 filetype on
