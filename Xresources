@@ -2,12 +2,13 @@
 !visual
 URxvt*font: xft:DejaVuSansMono:pixelsize=15
 URxvt*boldFont: xft:DejaVuSansMono:bold:pixelsize=15
-URxvt*letterSpace: -1
+URxvt*letterSpace: 0
 URxvt.background: #282828
 URxvt.foreground: #FFD7AF
 URxvt.scrollBar: false
 URxvt*cursorColor: #FF0000
 URxvt.highlightColor: #5F87FF
+URxvt.highlightTextColor: #000000
 
 !fake transparency
 !urxvt*transparent: true
