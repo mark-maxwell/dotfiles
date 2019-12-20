@@ -29,7 +29,7 @@ fi
 # Helpful general aliases
 alias pbcopy="xclip -selection clipboard"
 alias be="bundle exec"
-alias fs="bundle exec foreman start"
+alias fs="foreman start"
 alias ocred="cat ~/Documents/otb_various_credentials.txt"
 alias acred="cat ~/Documents/otb_amazon_resource_creds.txt"
 
