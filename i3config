@@ -171,7 +171,7 @@ exec --no-startup-id xset m 0 0
 bindsym $mod+Mod1+l exec i3lock -t -i ~/Downloads/desktop-backgrounds/i3_symlinked_lockscreen.png
 
 # Set desktop background (--bg-scale if image is large, --bg-fill to zoom but keep ratio)
-exec --no-startup-id feh --bg-scale ~/Downloads/desktop-backgrounds/i3_symlinked_background.png
+exec --no-startup-id feh --bg-fill ~/Downloads/desktop-backgrounds/i3_symlinked_background.png
 
 # Screenshot selection
 bindsym $mod+Shift+s exec scrot -s ~/Pictures/Screenshots/%Y-%m-%d-%H-%M-%S.png
