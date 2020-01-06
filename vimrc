@@ -30,8 +30,9 @@ au BufRead,BufNewFile *.pp   setfiletype puppet "enable vim-puppet to syntax hig
 let g:puppet_align_hashes = 0                   " no automatic hash alignment
 
 "" Visual
-colorscheme gruvbox
+colorscheme hybrid
 set background=dark
+hi Normal ctermbg=NONE                      " seems to reset and not take effect on load of file, but works separately
 syntax enable
 hi StatusLine ctermfg=16 ctermbg=9         " active statusline color
 hi StatuslineNC ctermfg=16 ctermbg=242      " inactive statusline color
@@ -163,6 +164,7 @@ imap <C-j> <CR>
 "" Saved macros
 let @h=':%s/:\(.*\) => "\(.*\)"/\1: "\2"'   " convert old ruby hash to new syntax
 let @i="mm{V}=j'm"                          " correctly indent current block of code
-let @c="mm{j}kI#'m"                     " comment out the current block of code
+let @c="mm{j}kc#'m"                     " comment out the current block of code
 let @y=":let @+=@%"                       " copy the current filepath to the system clipboard
 let @v=":e ~/.vimrc"
+let @b=":e ~/.bashrc"
