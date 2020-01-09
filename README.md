@@ -14,5 +14,9 @@
 ## Vim
 `:so %`
 
+## Additional tools and required packages
+- `scrot` for screenshots
+- `ffmpeg` for video capture
+
 ## TODO
 Create install script or wiki section describing list of necessary dependencies to install programs that use these dotfiles, e.g. what is required to compile Vim with clipboard and python support.
