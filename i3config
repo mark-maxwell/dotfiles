@@ -176,9 +176,6 @@ bindsym $mod+Mod1+l exec i3lock -t -i ~/Downloads/desktop-backgrounds/i3_symlink
 # Set desktop background (--bg-scale if image is large, --bg-fill to zoom but keep ratio)
 exec --no-startup-id feh --bg-fill ~/Downloads/desktop-backgrounds/i3_symlinked_background.png
 
-# Screenshot selection
-bindsym $mod+Shift+s exec scrot -s ~/Pictures/Screenshots/%Y-%m-%d-%H-%M-%S.png
-
 # Colors
 client.focused #1C1C1C #00AF87 #000000 #6B3CFF #00AF87
 
