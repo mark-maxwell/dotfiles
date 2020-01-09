@@ -73,6 +73,9 @@ bindsym $mod+f fullscreen toggle
 # screenshot area of screen
 bindsym --release $mod+Shift+s exec scrot -s
 
+# record 10 second video of 2nd monitor (NOTE: -i :0.0 would be first monitor. +1920 offsets capture to 2nd screen)
+bindsym $mod+Shift+v exec "ffmpeg -video_size 1920x1080 -t 10 -framerate 25 -f x11grab -i :0.0+1920,0 -strftime 1 \\"/home/`echo $USER`/Videos/ffmpeg_screencap_`date +%d-%m-%y_%s`.mp4\\""
+
 # change container layout (stacked, tabbed, toggle split)
 bindsym $mod+s layout stacking
 bindsym $mod+w layout tabbed
