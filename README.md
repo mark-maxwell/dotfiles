@@ -15,11 +15,13 @@
 `:so %`
 
 ## Additional tools and required packages
+- `urxvt` for great, simplistic unicode terminal emulator
 - `feh` for image viewing, specifically background/lock screen images
 - `mogrify` for resizing and converting images
 - `scrot` for screenshots
 - `ffmpeg` for video capture
 - `unclutter-xfixes` for hiding mouse when inactive (unclutter-xfixes instead of standard unclutter otherwise it causes issues focusing windows with i3wm)
+- `gcolor2` for color picker tool
 
 ## TODO
 Create install script for packages and symlink creation.
