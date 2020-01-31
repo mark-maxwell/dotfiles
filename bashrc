@@ -18,6 +18,10 @@ if [ -f ~/Code/bash_scripts/command_line/otb_navigation.sh ]; then
   source ~/Code/bash_scripts/command_line/otb_navigation.sh
 fi
 
+if [ -f ~/Code/bash_scripts/command_line/otb_known_hosts_update.sh ]; then
+  source ~/Code/bash_scripts/command_line/otb_known_hosts_update.sh
+fi
+
 if [ -f ~/Code/bash_scripts/command_line/who_deployed.sh ]; then
   source ~/Code/bash_scripts/command_line/who_deployed.sh
 fi
