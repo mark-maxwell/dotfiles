@@ -34,7 +34,7 @@ colorscheme hybrid
 set background=dark
 hi Normal ctermbg=NONE                      " seems to reset and not take effect on load of file, but works separately
 syntax enable
-hi StatusLine ctermfg=16 ctermbg=9         " active statusline color
+hi StatusLine ctermfg=16 ctermbg=9          " active statusline color
 hi StatuslineNC ctermfg=16 ctermbg=242      " inactive statusline color
 hi VertSplit ctermfg=0 ctermbg=NONE         " vertical split bar color
 set fillchars+=vert:│                       " set vertical split character to form line
@@ -51,9 +51,9 @@ hi ColorColumn ctermbg=0                    " vertical ruler color
 hi CursorLine ctermfg=NONE ctermbg=0        " current line highlighting
 hi LineNr ctermfg=239                       " line number color
 hi TabLineFill ctermfg=16 ctermbg=0         " horizontal tab section separator
-hi TabLine ctermfg=244 ctermbg=0            " unselected tab colors
-hi TabLineSel ctermfg=63 ctermbg=0          " selected tab colors
-hi Pmenu ctermfg=111 ctermbg=242             " set colors for autocomplete box
+hi TabLine ctermfg=238 ctermbg=0            " unselected tab colors
+hi TabLineSel ctermfg=69 ctermbg=0          " selected tab colors
+hi Pmenu ctermfg=111 ctermbg=242            " set colors for autocomplete box
 
 "" Cursor colors
 if &term =~ "xterm\\|rxvt"
@@ -77,8 +77,8 @@ set hlsearch		                        		" highlight matches
 set incsearch			                        	" incremental searching
 set ignorecase			                       	" searches are case insensitive...
 set smartcase		                        		" ...unless they start with a capital letter
-:hi Search cterm=NONE ctermfg=232 ctermbg=141
-:hi IncSearch cterm=NONE ctermfg=141 ctermbg=232
+:hi Search cterm=NONE ctermfg=232 ctermbg=69
+:hi IncSearch cterm=NONE ctermfg=69 ctermbg=232
 
 "" Auto commmands
 autocmd FileType * setlocal formatoptions-=cro " do not auto comment next line when the current line is commented
