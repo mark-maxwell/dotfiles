@@ -15,8 +15,11 @@
 `:so %`
 
 ## Additional tools and required packages
+- `feh` for image viewing, specifically background/lock screen images
+- `mogrify` for resizing and converting images
 - `scrot` for screenshots
 - `ffmpeg` for video capture
+- `unclutter-xfixes` for hiding mouse when inactive (unclutter-xfixes instead of standard unclutter otherwise it causes issues focusing windows with i3wm)
 
 ## TODO
-Create install script or wiki section describing list of necessary dependencies to install programs that use these dotfiles, e.g. what is required to compile Vim with clipboard and python support.
+Create install script for packages and symlink creation.
