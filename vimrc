@@ -54,6 +54,7 @@ hi TabLineFill ctermfg=16 ctermbg=0         " horizontal tab section separator
 hi TabLine ctermfg=0 ctermbg=251            " unselected tab colors
 hi TabLineSel ctermfg=43 ctermbg=235        " selected tab colors
 hi Pmenu ctermfg=69 ctermbg=235             " set colors for autocomplete box
+hi Title ctermfg=69 ctermbg=235
 
 "" Cursor colors
 if &term =~ "xterm\\|rxvt"
