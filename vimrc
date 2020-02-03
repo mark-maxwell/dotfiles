@@ -51,9 +51,9 @@ hi ColorColumn ctermbg=0                    " vertical ruler color
 hi CursorLine ctermfg=NONE ctermbg=0        " current line highlighting
 hi LineNr ctermfg=239                       " line number color
 hi TabLineFill ctermfg=16 ctermbg=0         " horizontal tab section separator
-hi TabLine ctermfg=238 ctermbg=0            " unselected tab colors
-hi TabLineSel ctermfg=69 ctermbg=0          " selected tab colors
-hi Pmenu ctermfg=111 ctermbg=242            " set colors for autocomplete box
+hi TabLine ctermfg=0 ctermbg=251            " unselected tab colors
+hi TabLineSel ctermfg=43 ctermbg=235        " selected tab colors
+hi Pmenu ctermfg=69 ctermbg=235             " set colors for autocomplete box
 
 "" Cursor colors
 if &term =~ "xterm\\|rxvt"
