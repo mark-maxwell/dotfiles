@@ -1,6 +1,6 @@
 # Terminal should really set this rather than shell, but Terminator is bad at this
 TERM=xterm-256color
-# allow ctrl+s for going forward in reverse-search (turns off XON/XOFF behaviour to allow this)
+# allow ctrl+s for forward reverse in reverse-search)
 stty -ixon
 
 if [ -f /usr/local/share/chruby/chruby.sh ]; then
