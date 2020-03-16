@@ -1,0 +1,17 @@
+[user]
+	name = Mark Maxwell
+	email = mark.maxwell@onthebeach.co.uk
+[core]
+	excludesfile = ~/.gitignore
+	editor = /usr/local/bin/vim
+[push]
+	default = current
+[alias]
+[hub]
+	host = github.otbeach.com
+[alias]
+  cane = commit --amend --no-edit
+	cp = cherry-pick
+  co = checkout
+	fa = fetch --all -p
+  dtf = diff-tree --no-commit-id --name-only -r HEAD
