@@ -24,6 +24,7 @@
 - `gcolor2` for color picker tool
 - `arandr` for GUI to set (and set preset) xrandr config easily
 - `lxappearance`, `gtkchtheme`, `qtconfig-qt4` for changing gtk 2.0 and 3.0 themes
+- `volumeicon-alsa` for volume icon in status bar (volumeicon command in i3config)
 
 ## Misc (non tech changes)
 - set Chrome theme to gtk+ to use same gtk theme
