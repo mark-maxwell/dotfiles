@@ -21,6 +21,10 @@ if [ -f ~/Code/bash_scripts/command_line/who_deployed.sh ]; then
   source ~/Code/bash_scripts/command_line/who_deployed.sh
 fi
 
+if [ -f ~/.git-completion.bash ]; then
+  source ~/.git-completion.bash
+fi
+
 if [ -f ~/.nvmrc ]; then
   source ~/.nvmrc
 fi
