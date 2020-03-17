@@ -9,11 +9,6 @@ if [ -f /usr/local/share/chruby/chruby.sh ]; then
   source /usr/local/share/chruby/auto.sh
 fi
 
-if [ -f ~/.bashrc_system_default ]; then
-  # until I have had chance to go through all these defaults
-  source ~/.bashrc_system_default
-fi
-
 if [ -f ~/Code/bash_scripts/command_line/otb_navigation.sh ]; then
   source ~/Code/bash_scripts/command_line/otb_navigation.sh
 fi
