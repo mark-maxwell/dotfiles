@@ -5,7 +5,7 @@ stty -ixon
 
 if [ -f /usr/local/share/chruby/chruby.sh ]; then
   source /usr/local/share/chruby/chruby.sh
-  chruby 2.6
+  chruby 2.7
   source /usr/local/share/chruby/auto.sh
 fi
 
