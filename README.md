@@ -14,6 +14,9 @@
 ## Vim
 `:so %`
 
+- Symlink vimrc to ~/.vim/vimrc
+- Symlink vim/after/plugin/colorscheme.vim to ~/.vim/after/plugin/colorscheme.vim
+
 ## Additional tools and required packages
 - `urxvt` for great, simplistic unicode terminal emulator
 - `feh` for image viewing, specifically background/lock screen images
