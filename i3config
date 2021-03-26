@@ -170,10 +170,10 @@ exec --no-startup-id xset r rate 177 60
 exec --no-startup-id xset m 0 0
 
 # i3lock screen
-bindsym $mod+Mod1+l exec i3lock -t -i ~/Downloads/desktop-backgrounds/i3_symlinked_lockscreen.png
+bindsym $mod+Mod1+l exec i3lock -t -i ~/Pictures/desktop-backgrounds/i3_symlinked_lockscreen.png
 
 # Set desktop background (--bg-scale if image is large, --bg-fill to zoom but keep ratio)
-exec --no-startup-id feh --bg-fill ~/Downloads/desktop-backgrounds/i3_symlinked_background.png
+exec --no-startup-id feh --bg-fill ~/Pictures/desktop-backgrounds/i3_symlinked_background.png
 
 # Colors
 client.focused #1C1C1C #00AF87 #000000 #6B3CFF #00AF87
