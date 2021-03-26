@@ -38,7 +38,7 @@ hi StatusLine ctermfg=16 ctermbg=9          " active statusline color
 hi StatuslineNC ctermfg=16 ctermbg=242      " inactive statusline color
 hi VertSplit ctermfg=0 ctermbg=NONE         " vertical split bar color
 set fillchars+=vert:│                       " set vertical split character to form line
-hi Visual cterm=bold ctermfg=0 ctermbg=36   " visual block selection color
+hi Visual cterm=bold ctermfg=0 ctermbg=56   " visual block selection color
 set laststatus=2                            " always show status line
 set statusline=%f                           " show complete file path
 set statusline+=\ %m                        " show [+] when file is modified
@@ -59,7 +59,7 @@ hi Title ctermfg=69 ctermbg=235
 "" Cursor colors
 if &term =~ "xterm\\|rxvt"
   " insert mode color (t_SI sent by vim when entering insert mode)
-  let &t_SI = "\<Esc>]12;cyan\x7"
+  let &t_SI = "\<Esc>]12;purple\x7"
   " other modes color (t_EI sent by vim when leaving insert mode)
   let &t_EI = "\<Esc>]12;red\x7"
   silent !echo -ne "\033]12;red\007"
@@ -78,8 +78,8 @@ set hlsearch		                        		" highlight matches
 set incsearch			                        	" incremental searching
 set ignorecase			                       	" searches are case insensitive...
 set smartcase		                        		" ...unless they start with a capital letter
-:hi Search cterm=NONE ctermfg=232 ctermbg=69
-:hi IncSearch cterm=NONE ctermfg=69 ctermbg=232
+:hi Search cterm=NONE ctermfg=232 ctermbg=56
+:hi IncSearch cterm=NONE ctermfg=232 ctermbg=52
 
 "" Auto commmands
 autocmd FileType * setlocal formatoptions-=cro " do not auto comment next line when the current line is commented
