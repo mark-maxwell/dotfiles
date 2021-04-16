@@ -86,6 +86,18 @@ bindsym $mod+Shift+space floating toggle
 # change focus between tiling / floating windows
 bindsym $mod+space focus mode_toggle
 
+# move floating windows with keys
+bindsym $mod+m mode "move" focus floating
+mode "move" {
+  bindsym h move left
+  bindsym j move down
+  bindsym k move up
+  bindsym l move right
+
+  bindsym Return mode "default"
+  bindsym Escape mode "default"
+}
+
 # focus the parent container
 bindsym $mod+a focus parent
 
