@@ -121,7 +121,7 @@ map <Leader>r :call Vspec()<CR>
 map <Leader>d :call Hspec()<CR>
 
 "" Ctags mappings
-map <Leader>c :!ctags --exclude=public --exclude=_html --exclude=tmp --exclude=log --exclude=coverage --exclude=vendor/bundle --exclude=node_modules --extra=+f -R *<CR>
+map <Leader>c :!ctags --exclude=public --exclude=_html --exclude=tmp --exclude=log --exclude=coverage --exclude=vendor/bundle --exclude=node_modules --extra=+f -R *<CR><CR>
 
 "" Pane & Navigation mappings
 nmap <C-H> <C-W>h
