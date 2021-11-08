@@ -3,7 +3,7 @@
 URxvt*font: xft:DejaVuSansMono:pixelsize=15
 URxvt*boldFont: xft:DejaVuSansMono:bold:pixelsize=15
 URxvt*letterSpace: 0
-URxvt.background: #282828
+URxvt.background: #25293A
 URxvt.foreground: #FFD7AF
 URxvt.scrollBar: false
 URxvt*cursorColor: #FF0000
@@ -14,23 +14,30 @@ URxvt.highlightTextColor: #000000
 urxvt*transparent: true
 urxvt*shading: 15
 
-!set 16 default terminal colors
-!0:black 1:red 2:green 3:yellow 4:blue 5:magenta 6:cyan 7:white 8:black 9:red 10:green 11:yellow 12:blue 13:magenta 14:cyan 15:white
+!set 16 default terminal colors based on Hybrid colorscheme
+!black
 *color0: black
-*color1: #cc241d
-*color2: #98971a
-*color3: #d79921
-*color4: #458588
-*color5: #b16286
-*color6: #689d6a
-*color7: #ffd7af
 *color8: black
+!red
+*color1: #cc241d
 *color9: #fb4934
+!green
+*color2: #1AB569
 *color10: #b8bb26
+!yellow
+*color3: #d79921
 *color11: #fabd2f
+!blue
+*color4: #458588
 *color12: #83a598
+!magenta
+*color5: #b16286
 *color13: #d3869b
+!cyan
+*color6: #689d6a
 *color14: #8ec07c
+!white
+*color7: #ffd7af
 *color15: #fbf1c7
 
 !stop auto scrolling with buffer when manual scrolling
