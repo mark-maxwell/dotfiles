@@ -5,7 +5,7 @@ stty -ixon
 
 if [ -f /usr/local/share/chruby/chruby.sh ]; then
   source /usr/local/share/chruby/chruby.sh
-  chruby 2.7
+  chruby 3.0
   source /usr/local/share/chruby/auto.sh
 fi
 
@@ -33,7 +33,7 @@ fi
 alias pbcopy="xclip -selection clipboard"
 alias be="bundle exec"
 alias fs="foreman start"
-alias ocred="cat ~/Documents/otb_various_credentials.txt"
+alias ocred="cat ~/Documents/otb_various_credentials.md"
 alias acred="cat ~/Documents/otb_amazon_resource_creds.txt"
 
 alias ls='ls --color=auto -GF'
