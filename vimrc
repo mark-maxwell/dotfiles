@@ -38,7 +38,7 @@ hi StatusLine ctermfg=16 ctermbg=9          " active statusline color
 hi StatuslineNC ctermfg=16 ctermbg=242      " inactive statusline color
 hi VertSplit ctermfg=0 ctermbg=NONE         " vertical split bar color
 set fillchars+=vert:│                       " set vertical split character to form line
-hi Visual cterm=bold ctermfg=0 ctermbg=56   " visual block selection color
+hi Visual cterm=bold ctermfg=0 ctermbg=27   " visual block selection color
 set laststatus=2                            " always show status line
 set statusline=%f                           " show complete file path
 set statusline+=\ %m                        " show [+] when file is modified
@@ -52,9 +52,10 @@ hi CursorLine ctermfg=NONE ctermbg=0        " current line highlighting
 hi LineNr ctermfg=239                       " line number color
 hi TabLineFill ctermfg=16 ctermbg=0         " horizontal tab section separator
 hi TabLine ctermfg=0 ctermbg=251            " unselected tab colors
-hi TabLineSel ctermfg=43 ctermbg=235        " selected tab colors
-hi Pmenu ctermfg=69 ctermbg=235             " set colors for autocomplete box
-hi Title ctermfg=69 ctermbg=235
+hi TabLineSel ctermfg=0 ctermbg=43          " selected tab colors
+hi Pmenu ctermfg=69 ctermbg=234             " set colors for autocomplete box
+hi PmenuSel ctermfg=27 ctermbg=0
+hi Title ctermfg=69 ctermbg=234
 
 "" Cursor colors
 if &term =~ "xterm\\|rxvt"
@@ -78,8 +79,8 @@ set hlsearch		                        		" highlight matches
 set incsearch			                        	" incremental searching
 set ignorecase			                       	" searches are case insensitive...
 set smartcase		                        		" ...unless they start with a capital letter
-:hi Search cterm=NONE ctermfg=232 ctermbg=56
-:hi IncSearch cterm=NONE ctermfg=232 ctermbg=52
+:hi Search cterm=NONE ctermfg=0 ctermbg=27
+:hi IncSearch cterm=NONE ctermfg=0 ctermbg=51
 
 "" Auto commmands
 autocmd FileType * setlocal formatoptions-=cro " do not auto comment next line when the current line is commented
