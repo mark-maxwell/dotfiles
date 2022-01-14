@@ -7,7 +7,7 @@ URxvt.background: #25293A
 URxvt.foreground: #FFD7AF
 URxvt.scrollBar: false
 URxvt*cursorColor: #FF0000
-URxvt.highlightColor: #5F87FF
+URxvt.highlightColor: #245AFF
 URxvt.highlightTextColor: #000000
 
 !fake transparency
