@@ -72,7 +72,7 @@ endif
 set nowrap			                          	" don't wrap lines
 set tabstop=2 shiftwidth=2	              	" a tab is 4 spaces (or set this to 4)
 set expandtab			                         	" use spaces, not tabs (optional)
-highlight ExtraWhitespace ctermbg=161 " better whitespace plugin variable
+highlight ExtraWhitespace ctermbg=196        " better whitespace plugin variable
 
 "" Searching
 set hlsearch		                        		" highlight matches
