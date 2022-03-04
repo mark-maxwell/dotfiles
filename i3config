@@ -98,6 +98,10 @@ mode "move" {
   bindsym Escape mode "default"
 }
 
+# open following programs in floating windows by default
+# run `xprop` in terminal and click window to get corresponding class and instance
+for_window [class="Gnome-calculator" instance="gnome-calculator"] floating enable
+
 # focus the parent container
 bindsym $mod+a focus parent
 
