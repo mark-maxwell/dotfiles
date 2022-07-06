@@ -29,6 +29,10 @@ if [ -f ~/.nvmrc ]; then
   source ~/.nvmrc
 fi
 
+if [ -f ~/.aws-aliases.sh ]; then
+  source ~/.aws-aliases.sh
+fi
+
 # Helpful general aliases
 alias pbcopy="xclip -selection clipboard"
 alias be="bundle exec"
