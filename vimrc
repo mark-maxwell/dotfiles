@@ -155,7 +155,7 @@ map <Leader>e :Explore<CR>
 "" Misc. mappings
 map <Leader>f :!clear<CR>:Ack! <cword>*<CR>
 map <Leader>g :!clear<CR>:grep --color <cword>*<CR>
-map <Leader>G :Gblame<CR>
+map <Leader>G :Git blame<CR>
 map <Leader>p "*p<CR>
 map <Leader>z :noh<CR>
 map <Leader>/ :set cursorline!<CR>
