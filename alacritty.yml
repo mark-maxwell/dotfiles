@@ -1,3 +1,32 @@
+# Window decorations
+window:
+  decorations: none
+
+# Colors
+colors:
+  cursor:
+    # Terminal cursor color
+    cursor: '#FF0000'
+  normal:
+    red: '#CC241D'
+    green: '#1AB569'
+    yellow: '#D79921'
+    blue: '#458588'
+    magenta: '#B16286'
+    cyan: '#689D6A'
+    white: '#FFD7AF'
+  bright:
+    red: '#FB4934'
+    green: '#B8BB26'
+    yellow: '#FABD2F'
+    blue: '#83A598'
+    magenta: '#D3869B'
+    cyan: '#8EC07C'
+    white: '#FBF1C7'
+  selection:
+    text: '#000000'
+    background: '#245AFF'
+
 # Font configuration
 font:
   normal:
@@ -13,7 +42,3 @@ font:
     family: iosevka
     style: Bold Italic
   size: 17.0
-
-# Window decorations
-window:
-  decorations: none
