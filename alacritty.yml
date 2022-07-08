@@ -1,0 +1,19 @@
+# Font configuration
+font:
+  normal:
+    family: iosevka
+    style: Regular
+  bold:
+    family: iosevka
+    style: Bold
+  italic:
+    family: iosevka
+    style: Italic
+  bold_italic:
+    family: iosevka
+    style: Bold Italic
+  size: 17.0
+
+# Window decorations
+window:
+  decorations: none
