@@ -1,0 +1,16 @@
+# ~/.profile: executed by the command interpreter for login shells.
+# This file is not read by bash(1), if ~/.bash_profile or ~/.bash_login
+# exists
+
+# set PATH so it includes user's local bin if it exists
+if [ -d "$HOME/local/bin" ] ; then
+  export PATH="$HOME/local/bin:$PATH"
+fi
+
+# Homebrew is installed in opt/ for apple silicon laptops
+export PATH=$PATH:/opt/homebrew/bin:/opt/homebrew/Cellar
+
+# Silence Mac warnings about switching to zsh when terminal starts
+export BASH_SILENCE_DEPRECATION_WARNING=1
+
+source ~/.bashrc
