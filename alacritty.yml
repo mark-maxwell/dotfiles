@@ -27,6 +27,9 @@ colors:
     text: '#000000'
     background: '#245AFF'
 
+mouse:
+  hide_when_typing: true
+
 # Font configuration
 font:
   normal:
