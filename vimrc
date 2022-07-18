@@ -48,8 +48,9 @@ set scrolloff=6                             " keep cursor centered (7777). Set t
 set number                                  " show line numbers
 set colorcolumn=80                          " 80 character ruler
 hi ColorColumn ctermbg=0                    " vertical ruler color
-hi CursorLine ctermfg=NONE ctermbg=0        " current line highlighting
 hi LineNr ctermfg=239                       " line number color
+hi CursorLine ctermfg=NONE ctermbg=0        " current line highlighting
+hi CursorLineNR ctermfg=9 ctermbg=NONE      " line number colors when current line highlighting is on
 hi TabLineFill ctermfg=16 ctermbg=0         " horizontal tab section separator
 hi TabLine ctermfg=0 ctermbg=251            " unselected tab colors
 hi TabLineSel ctermfg=0 ctermbg=43          " selected tab colors
