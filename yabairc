@@ -1,6 +1,23 @@
+# Window gaps
 yabai -m config layout bsp
 yabai -m config top_padding 5
 yabai -m config bottom_padding 5
 yabai -m config left_padding 5
 yabai -m config right_padding 5
 yabai -m config window_gap 10
+
+# Window borders
+yabai -m config window_border on
+yabai -m config window_border_width 3
+yabai -m config active_window_border_color 0xff1f736b
+
+# Mouse
+yabai -m config mouse_follows_focus on
+
+# Floating windows are always on top
+yabai -m config window_topmost on
+
+# Always float these applictions
+yabai -m rule --add app="^Finder$" sticky=on layer=above manage=off
+yabai -m rule --add app="^Calculator$" sticky=on layer=above manage=off
+yabai -m rule --add app="^OpenVPN Connect$" sticky=on layer=above manage=off
