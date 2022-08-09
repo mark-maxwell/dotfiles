@@ -21,3 +21,4 @@ yabai -m config window_topmost on
 yabai -m rule --add app="^Finder$" sticky=on layer=above manage=off
 yabai -m rule --add app="^Calculator$" sticky=on layer=above manage=off
 yabai -m rule --add app="^OpenVPN Connect$" sticky=on layer=above manage=off
+yabai -m rule --add app="^System Preferences$" sticky=on layer=above manage=off
