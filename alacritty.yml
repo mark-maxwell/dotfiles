@@ -2,6 +2,25 @@
 window:
   decorations: none
 
+mouse:
+  hide_when_typing: true
+
+# Font configuration
+font:
+  normal:
+    family: iosevka
+    style: Regular
+  bold:
+    family: iosevka
+    style: Bold
+  italic:
+    family: iosevka
+    style: Italic
+  bold_italic:
+    family: iosevka
+    style: Bold Italic
+  size: 17.0
+
 # Colors
 colors:
   cursor:
@@ -27,21 +46,7 @@ colors:
     text: '#000000'
     background: '#245AFF'
 
-mouse:
-  hide_when_typing: true
-
-# Font configuration
-font:
-  normal:
-    family: iosevka
-    style: Regular
-  bold:
-    family: iosevka
-    style: Bold
-  italic:
-    family: iosevka
-    style: Italic
-  bold_italic:
-    family: iosevka
-    style: Bold Italic
-  size: 17.0
+  # Vi mode cursor colors
+  vi_mode_cursor:
+    text: 'CellBackground'
+    cursor: '#520AF0'
