@@ -2,6 +2,8 @@
 TERM=xterm-256color
 # allow ctrl+s for forward reverse in reverse-search)
 stty -ixon
+# Disable Alacritty icon bouncing on MacOS
+printf "\e[?1042l"
 
 if [ -f /usr/local/share/chruby/chruby.sh ]; then
   source /usr/local/share/chruby/chruby.sh
