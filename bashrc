@@ -57,17 +57,17 @@ alias glogm="git log --author='Mark Maxwell'"
 
 # colors for bash prompt
 PURPLE="\[\033[38;5;69m\]"
+LPURPLE="\[\033[38;5;141m\]"
 DPURPLE="\[\033[38;5;57m\]"
-BPURPLE="\[\033[38;5;93m\]"
 BLUE="\[\033[38;5;45m\]"
 DBLUE="\[\033[38;5;57m\]"
+GREEN="\[\033[38;5;29m\]"
 MAGENTA="\[\033[38;5;198m\]"
 BTURQ="\[\033[38;5;51m\]"
 GTURQ="\[\033[38;5;50m\]"
-TGREEN="\[\033[38;5;122m\]"
 ORANGE="\[\033[38;5;202m\]"
 
-export PS1="\n $BLUE\t\n $PURPLE\w$MAGENTA\$(ruby_prompt)$BTURQ\$(parse_git_branch)$PURPLE ∫\[\033[0m\] "
+export PS1="\n $BLUE\t $PURPLE\w$MAGENTA\$(ruby_prompt)$LPURPLE\$(parse_git_branch)$PURPLE ∫\[\033[0m\] "
 export EDITOR=vim
 
 # change ls command directory color
