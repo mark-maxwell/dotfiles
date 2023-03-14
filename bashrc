@@ -40,7 +40,6 @@ alias pbcopy="xclip -selection clipboard"
 alias be="bundle exec"
 alias fs="foreman start"
 alias ocred="vim ~/Documents/otb_various_credentials.md"
-alias acred="cat ~/Documents/otb_amazon_resource_creds.txt"
 
 alias ls='ls --color=auto -GF'
 alias grep="grep --color=auto"
