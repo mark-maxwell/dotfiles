@@ -11,6 +11,12 @@ if [ -f /usr/local/share/chruby/chruby.sh ]; then
   source /usr/local/share/chruby/auto.sh
 fi
 
+if [ -f /opt/homebrew/opt/chruby/share/chruby/chruby.sh ]; then
+  source /opt/homebrew/opt/chruby/share/chruby/chruby.sh
+  chruby 3.0
+  source /opt/homebrew/opt/chruby/share/chruby/auto.sh
+fi
+
 if [ -f ~/Code/bash_scripts/command_line/otb_navigation.sh ]; then
   source ~/Code/bash_scripts/command_line/otb_navigation.sh
 fi
