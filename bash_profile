@@ -13,4 +13,7 @@ export PATH=$PATH:/opt/homebrew/bin:/opt/homebrew/Cellar
 # Silence Mac warnings about switching to zsh when terminal starts
 export BASH_SILENCE_DEPRECATION_WARNING=1
 
+# Prevents error in multithreaded apps due to Mac security restrictions
+export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
+
 source ~/.bashrc
