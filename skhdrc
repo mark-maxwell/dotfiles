@@ -27,3 +27,6 @@ cmd - f: yabai -m window --toggle zoom-fullscreen
 
 # Float / Unfloat window
 cmd + shift - space: yabai -m window --toggle float; yabai -m window --toggle border
+
+# Toggle horizontal/vertical window split
+alt - space : yabai -m window --toggle split
