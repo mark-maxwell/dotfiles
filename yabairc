@@ -22,3 +22,6 @@ yabai -m rule --add app="^Finder$" sticky=on layer=above manage=off
 yabai -m rule --add app="^Calculator$" sticky=on layer=above manage=off
 yabai -m rule --add app="^OpenVPN Connect$" sticky=on layer=above manage=off
 yabai -m rule --add app="^System Settings$" sticky=on layer=above manage=off
+
+# Always float popup settings menus
+yabai -m rule --add title="^Settings$" sticky=on layer=above manage=off
