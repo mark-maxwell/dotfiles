@@ -21,6 +21,7 @@ call vundle#begin()
   Plugin 'mark-maxwell/vim-spec-split'
   Plugin 'rodjek/vim-puppet'
   Plugin 'mileszs/ack.vim'
+  Plugin 'hashivim/vim-terraform'
 call vundle#end()
 
 filetype plugin indent on	                	" load filetype plugins + indentation
