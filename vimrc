@@ -7,6 +7,7 @@ set backspace=indent,eol,start
 filetype on
 set omnifunc=syntaxcomplete#Complete
 
+set regexpengine=0                          " set to 'auto' engine selection value. Prevents typescript files causing Vim to hang
 syntax on
 
 set rtp+=~/.vim/bundle/Vundle.vim
