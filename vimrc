@@ -140,11 +140,11 @@ map <Leader>w :w  <CR>
 map <Leader>q :q  <CR>
 map <Leader>x :x  <CR>
 map <Leader>n :tabnew  <CR>
-map <Leader>1 1gt <CR>
-map <Leader>2 2gt <CR>
-map <Leader>3 3gt <CR>
-map <Leader>4 4gt <CR>
-map <Leader>5 5gt <CR>
+map <Leader>1 1gt
+map <Leader>2 2gt
+map <Leader>3 3gt
+map <Leader>4 4gt
+map <Leader>5 5gt
 
 map <Leader>= <C-W>=
 map <Leader>_ <C-W>_
