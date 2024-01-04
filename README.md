@@ -17,6 +17,10 @@
 - Symlink vimrc to ~/.vim/vimrc
 - Symlink vim/after/plugin/colorscheme.vim to ~/.vim/after/plugin/colorscheme.vim
 
+## Yabai
+`yabai --start-service`
+`yabai --restart-service`
+
 ## Additional tools and required packages
 - `urxvt` for great, simplistic unicode terminal emulator
 - `feh` for image viewing, specifically background/lock screen images
