@@ -6,11 +6,6 @@ yabai -m config left_padding 5
 yabai -m config right_padding 5
 yabai -m config window_gap 10
 
-# Window borders
-yabai -m config window_border on
-yabai -m config window_border_width 3
-yabai -m config active_window_border_color 0xff1f736b
-
 # Mouse
 yabai -m config mouse_follows_focus on
 
