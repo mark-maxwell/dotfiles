@@ -1,5 +1,5 @@
 # Restart yabai (quicker than doing so via brew services restart yabai)
-ctrl + alt + cmd - r : launchctl kickstart -k "gui/${UID}/homebrew.mxcl.yabai"
+ctrl + alt + cmd - r : yabai --restart-service
 
 # Application launcher keybinds
 cmd - return : open -na /Applications/Alacritty.app
