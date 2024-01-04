@@ -50,3 +50,8 @@ colors:
   vi_mode_cursor:
     text: 'CellBackground'
     cursor: '#520AF0'
+
+# Key bindings
+key_bindings:
+  - { key: F,  mods: Alt, chars: "\x1bf" }
+  - { key: B,  mods: Alt, chars: "\x1bb" }
