@@ -19,7 +19,7 @@ font:
   bold_italic:
     family: iosevka
     style: Bold Italic
-  size: 17.0
+  size: 16.0
 
 # Colors
 colors:
