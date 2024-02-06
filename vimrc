@@ -64,10 +64,12 @@ hi Pmenu ctermfg=69 ctermbg=234             " set colors for autocomplete box
 hi PmenuSel ctermfg=27 ctermbg=0
 hi Title ctermfg=69 ctermbg=234
 
-"" Cursor colors
+"" Cursor colors - `:help cursor-shape` for details
 if &term =~ "xterm\\|rxvt"
   " insert mode color (t_SI sent by vim when entering insert mode)
   let &t_SI = "\<Esc>]12;purple\x7"
+  " visual select mode color (t_SR sent by vim when entering replace mode)
+  let &t_SR = "\<Esc>]12;cyan\x7"
   " other modes color (t_EI sent by vim when leaving insert mode)
   let &t_EI = "\<Esc>]12;red\x7"
   silent !echo -ne "\033]12;red\007"
