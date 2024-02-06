@@ -99,6 +99,7 @@ autocmd VimResized * wincmd =                  " automatically resize panes when
 set wildmode=list:longest,list:full
 set wildignore+=*.o,*.obj,.git,*.rbc,*.class,.svn,vendor,_html,doc
 set wildignorecase                          " case insensitive autocomplete
+let g:ctrlp_show_hidden = 1                 " show hidden files
 
 "" The Silver Searcher
 if executable('ag')
