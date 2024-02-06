@@ -13,15 +13,18 @@ syntax on
 set rtp+=~/.vim/bundle/Vundle.vim
 
 call vundle#begin()
-  Plugin 'ntpeters/vim-better-whitespace'
-  Plugin 'tpope/vim-fugitive'
-  Plugin 'kien/ctrlp.vim'
-  Plugin 'tpope/vim-endwise'
-  Plugin 'tpope/vim-surround'
-  Plugin 'mark-maxwell/vim-spec-split'
-  Plugin 'rodjek/vim-puppet'
-  Plugin 'mileszs/ack.vim'
   Plugin 'hashivim/vim-terraform'
+  Plugin 'jparise/vim-graphql'
+  Plugin 'kien/ctrlp.vim'
+  Plugin 'leafgarland/typescript-vim'
+  Plugin 'mark-maxwell/vim-spec-split'
+  Plugin 'mileszs/ack.vim'
+  Plugin 'ntpeters/vim-better-whitespace'
+  Plugin 'pangloss/vim-javascript'
+  Plugin 'rodjek/vim-puppet'
+  Plugin 'tpope/vim-endwise'
+  Plugin 'tpope/vim-fugitive'
+  Plugin 'tpope/vim-surround'
 call vundle#end()
 
 filetype plugin indent on	                	" load filetype plugins + indentation
