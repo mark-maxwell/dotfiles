@@ -42,6 +42,7 @@ if [ -f ~/.aws-aliases.sh ]; then
 fi
 
 # Helpful general aliases
+alias n="nvim"
 alias pbcopy="xclip -selection clipboard"
 alias be="bundle exec"
 alias fs="foreman start"
