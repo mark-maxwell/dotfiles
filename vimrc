@@ -25,6 +25,7 @@ call vundle#begin()
   Plugin 'tpope/vim-endwise'
   Plugin 'tpope/vim-fugitive'
   Plugin 'tpope/vim-surround'
+  Plugin 'neoclide/coc.nvim'
 call vundle#end()
 
 filetype plugin indent on	                	" load filetype plugins + indentation
