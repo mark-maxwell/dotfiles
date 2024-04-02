@@ -36,9 +36,9 @@ au BufRead,BufNewFile *.pp   setfiletype puppet "enable vim-puppet to syntax hig
 let g:puppet_align_hashes = 0                   " no automatic hash alignment
 
 "" Visual
-colorscheme hybrid
-set background=dark
 hi Normal ctermbg=NONE                      " seems to reset and not take effect on load of file, but works separately
+set background=dark
+colorscheme hybrid
 syntax enable
 hi StatusLine ctermfg=16 ctermbg=9          " active statusline color
 hi StatuslineNC ctermfg=16 ctermbg=242      " inactive statusline color
