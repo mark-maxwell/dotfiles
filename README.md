@@ -17,6 +17,9 @@
 - Symlink vimrc to ~/.vim/vimrc
 - Symlink vim/after/plugin/colorscheme.vim to ~/.vim/after/plugin/colorscheme.vim
 
+## NeoVim
+- Symlink vimrc to ~/.config/nvim/init.vim
+
 ## Yabai
 `yabai --start-service`
 `yabai --restart-service`

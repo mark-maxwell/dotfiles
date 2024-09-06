@@ -15,17 +15,19 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
   Plugin 'hashivim/vim-terraform'
   Plugin 'jparise/vim-graphql'
+  Plugin 'junegunn/fzf'
+  Plugin 'junegunn/fzf.vim'
   Plugin 'kien/ctrlp.vim'
   Plugin 'leafgarland/typescript-vim'
   Plugin 'mark-maxwell/vim-spec-split'
   Plugin 'mileszs/ack.vim'
+  Plugin 'neoclide/coc.nvim'
   Plugin 'ntpeters/vim-better-whitespace'
   Plugin 'pangloss/vim-javascript'
   Plugin 'rodjek/vim-puppet'
   Plugin 'tpope/vim-endwise'
   Plugin 'tpope/vim-fugitive'
   Plugin 'tpope/vim-surround'
-  Plugin 'neoclide/coc.nvim'
 call vundle#end()
 
 filetype plugin indent on	                	" load filetype plugins + indentation
@@ -38,11 +40,16 @@ let g:puppet_align_hashes = 0                   " no automatic hash alignment
 "" Visual
 hi Normal ctermbg=NONE                      " seems to reset and not take effect on load of file, but works separately
 set background=dark
+" Ensure old colors are used in Neovim >= v0.10
+colorscheme vim
+set notermguicolors
+
 colorscheme hybrid
 syntax enable
 hi StatusLine ctermfg=16 ctermbg=9          " active statusline color
 hi StatuslineNC ctermfg=16 ctermbg=242      " inactive statusline color
 hi VertSplit ctermfg=0 ctermbg=NONE         " vertical split bar color
+hi WinSeparator ctermfg=0 ctermbg=NONE      " vertical split bar color [NeoVim >= v0.10]
 set fillchars+=vert:│                       " set vertical split character to form line
 hi Visual cterm=bold ctermfg=4 ctermbg=0    " visual block selection color
 set laststatus=2                            " always show status line
@@ -161,10 +168,15 @@ map <Leader>\| <C-W>\|
 map <Leader><C-]> :vsp <CR>:exec("tag ".expand("<cword>"))<CR>
 map <Leader><C-t> :tab split<CR>:exec("tag ".expand("<cword>"))<CR>
 
+"" coc.vim suggestions accepted with <CR>
+inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm()
+      \: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
+
 map <Leader>e :Explore<CR>
 
 "" Misc. mappings
 map <Leader>f :!clear<CR>:Ack! <cword>*<CR>
+map <Leader>a :Ag<CR>
 map <Leader>g :!clear<CR>:grep --color <cword>*<CR>
 map <Leader>G :Git blame<CR>
 map <Leader>p "*p<CR>
