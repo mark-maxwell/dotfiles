@@ -40,5 +40,13 @@
 ## Misc (non tech changes)
 - set Chrome theme to gtk+ to use same gtk theme
 
+## Mac
+- `yabai` and `skhd` for window manager
+- `Alacritty` for terminal
+- `shottr` for screenshots
+- `caffeine` to prevent laptop sleeping
+- `MongoDB Compass`
+- `FileZilla` for FTP
+
 ## TODO
 Create install script for packages and symlink creation.

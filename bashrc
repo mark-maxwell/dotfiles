@@ -44,15 +44,16 @@ fi
 # Helpful general aliases
 alias n="nvim"
 alias vim="nvim"
-alias pbcopy="xclip -selection clipboard"
+#alias pbcopy="xclip -selection clipboard"
 alias be="bundle exec"
 alias fs="foreman start"
-alias ocred="vim ~/Documents/otb_various_credentials.md"
+alias ocred="vim ~/oDocuments/otb_various_credentials.md"
 
 alias ls='ls --color=auto -GF'
 alias grep="grep --color=auto"
 alias fgrep="fgrep --color=auto"
 alias egrep="egrep --color=auto"
+# alias vf='vim $(find . -type f | fzf)'
 
 # git aliases
 alias gs="git status"
