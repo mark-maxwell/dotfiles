@@ -25,6 +25,9 @@
 `yabai --start-service`
 `yabai --restart-service`
 
+### skhd
+- Symlink skhdrc to ~/.config/skhd/skhdrc
+
 ## Additional tools and required packages
 - `urxvt` for great, simplistic unicode terminal emulator
 - `feh` for image viewing, specifically background/lock screen images
