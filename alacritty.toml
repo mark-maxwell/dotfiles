@@ -1,3 +1,7 @@
+[shell]
+program = "/bin/bash"
+args = ["-l"]
+
 [colors.bright]
 blue = "#83A598"
 cyan = "#8EC07C"
