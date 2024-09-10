@@ -3,7 +3,7 @@
 	email = mark.maxwell@onthebeach.co.uk
 [core]
 	excludesfile = ~/.gitignore
-	editor = /usr/local/bin/vim
+	editor = /opt/homebrew/bin/nvim
 [push]
 	default = current
 [alias]
