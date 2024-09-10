@@ -28,6 +28,13 @@
 ### skhd
 - Symlink skhdrc to ~/.config/skhd/skhdrc
 
+## Tmux
+- Symlink tmux.conf to ~/.tmux.conf
+NOTE: For Mac, the default shortcut for changing the keyboard input source (e.g.
+from UK to US keyboard layout) is CTRL+SPACE which clashes with the custom Tmux
+leader key - preventing Tmux shortcuts from working - so the Mac shortcut must
+be bound to something else.
+
 ## Additional tools and required packages
 - `urxvt` for great, simplistic unicode terminal emulator
 - `feh` for image viewing, specifically background/lock screen images
