@@ -21,6 +21,7 @@
 - Symlink vimrc to ~/.config/nvim/init.vim
 
 ## Yabai
+- Symlink yabairc to ~/.config/yabai/yabairc
 `yabai --start-service`
 `yabai --restart-service`
 
