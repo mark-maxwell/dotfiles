@@ -37,6 +37,7 @@ be bound to something else.
 
 ## Additional tools and required packages
 - `urxvt` for great, simplistic unicode terminal emulator
+- `git-completion.bash` copied from official git github repo to `~/.git-completion.bash`
 - `feh` for image viewing, specifically background/lock screen images
 - `mogrify` for resizing and converting images
 - `scrot` for screenshots
