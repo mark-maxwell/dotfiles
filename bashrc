@@ -7,13 +7,13 @@ printf "\e[?1042l"
 
 if [ -f /usr/local/share/chruby/chruby.sh ]; then
   source /usr/local/share/chruby/chruby.sh
-  chruby 3.0
+  chruby 3
   source /usr/local/share/chruby/auto.sh
 fi
 
 if [ -f /opt/homebrew/opt/chruby/share/chruby/chruby.sh ]; then
   source /opt/homebrew/opt/chruby/share/chruby/chruby.sh
-  chruby 3.0
+  chruby 3
   source /opt/homebrew/opt/chruby/share/chruby/auto.sh
 fi
 
