@@ -67,7 +67,7 @@ set number                                  " show line numbers
 set colorcolumn=80                          " 80 character ruler
 hi ColorColumn ctermbg=0                    " vertical ruler color
 hi LineNr ctermfg=239                       " line number color
-hi CursorLine ctermfg=NONE ctermbg=NONE     " current line highlighting turned off so line below can highlight only the line number
+hi CursorLine ctermfg=NONE ctermbg=0        " highlight current line bg to match vertical ruler
 hi CursorLineNR ctermfg=9 ctermbg=NONE      " set current line color when cursorline is enabled
 set cursorline                              " enable cursor line by default
 hi TabLineFill ctermfg=16 ctermbg=0         " horizontal tab section separator
