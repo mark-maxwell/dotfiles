@@ -87,6 +87,5 @@ function parse_git_branch() {
 }
 
 function ruby_prompt() {
-  ruby -v 2> /dev/null | sed -e 's/ruby//g; s/p.*//g'
-  #echo $RUBY_VERSION 2> /dev/null
+  ruby -v 2> /dev/null | sed -e 's/ruby//g; s/p.*//g; s/ (.*).*//g'
 }
