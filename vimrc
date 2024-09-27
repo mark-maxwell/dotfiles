@@ -199,6 +199,7 @@ let @c="mm{j}kc#'m"                     " comment out the current block of cod
 let @y=":let @+=@%"                       " copy the current filepath to the system clipboard
 let @v=":e ~/.vimrc"
 let @b=":e ~/.bashrc"
+let @a=":e ~/.config/alacritty.toml"
 
 "" Lua code here until large enough to place in lua config directory or init.vim converted to init.lua
 lua << EOF
