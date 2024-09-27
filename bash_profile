@@ -10,6 +10,7 @@ fi
 # Homebrew is installed in opt/ for apple silicon laptops
 export PATH=$PATH:/opt/homebrew/bin:/opt/homebrew/Cellar
 export PATH="/opt/homebrew/opt/mysql@8.4/bin:$PATH"
+export PATH="$PATH:$HOME/.dotnet/tools"
 
 # Silence Mac warnings about switching to zsh when terminal starts
 export BASH_SILENCE_DEPRECATION_WARNING=1
