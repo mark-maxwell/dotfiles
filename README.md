@@ -16,6 +16,7 @@
 
 - Symlink vimrc to ~/.vim/vimrc
 - Symlink vim/after/plugin/colorscheme.vim to ~/.vim/after/plugin/colorscheme.vim
+- `ack` dependency install required for ack.vim plugin
 
 ## NeoVim
 - Symlink vimrc to ~/.config/nvim/init.vim
