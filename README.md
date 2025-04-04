@@ -26,6 +26,10 @@
 `yabai --start-service`
 `yabai --restart-service`
 
+## Aerospace
+- Symlink aerospace.toml to ~/.config/aerospace/aerospace.toml
+- Start via standard Mac spotlight application search
+
 ### skhd
 - Symlink skhdrc to ~/.config/skhd/skhdrc
 
@@ -55,7 +59,7 @@ be bound to something else.
 - set Chrome theme to gtk+ to use same gtk theme
 
 ## Mac
-- `yabai` and `skhd` for window manager
+- (`yabai` and `skhd`) OR aerospace for window manager
 - `Alacritty` for terminal
 - `shottr` for screenshots
 - `caffeine` to prevent laptop sleeping
