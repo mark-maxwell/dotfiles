@@ -153,6 +153,15 @@ nmap <C-j> <C-W>j
 nmap <C-k> <C-W>k
 nmap <C-l> <C-W>l
 
+"" Ensure Ctrl+l navigation works when inside a netrw pane
+augroup netrw_mapping
+  autocmd!
+  autocmd filetype netrw call NetrwMapping()
+augroup END
+function! NetrwMapping()
+  nnoremap <buffer> <C-l> <C-W>l<CR>
+endfunction
+
 map <Leader>v :vs  <CR>
 map <Leader>s :sp  <CR>
 map <Leader>w :w  <CR>
