@@ -190,8 +190,9 @@ inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm()
 map <Leader>e :Explore<CR>
 
 "" Misc. mappings
-map <Leader>f :!clear<CR>:Ack! <cword>*<CR>
-map <Leader>a :Ag<CR>
+"map <Leader>f :!clear<CR>:Ack! <cword>*<CR>
+"map <Leader>f :!clear<CR>:Ag <C-R><C-W><CR><CR>
+map <Leader>f :Ag<CR>
 map <Leader>g :!clear<CR>:grep --color <cword>*<CR>
 map <Leader>G :Git blame<CR>
 map <Leader>p "*p<CR>
@@ -224,7 +225,7 @@ vim.keymap.set('n', '<leader>B', function()
   require 'dap'.set_breakpoint(vim.fn.input('Breakpoint condition: '))
 end)
 
--- echo $VIMRUNTIME -> /opt/homebrew/cellar/neovim/0.10.0/share/nvim/runtime/
+-- echo $VIMRUNTIME -> /opt/homebrew/cellar/neovim/0.10.1/share/nvim/runtime/
 debugger_home = os.getenv("HOME")
 require("dap-vscode-js").setup({
 -- node_path = "node", -- Path of node executable. Defaults to $NODE_PATH, and then "node"
