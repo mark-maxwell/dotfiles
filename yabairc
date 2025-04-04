@@ -14,7 +14,7 @@ yabai -m config window_topmost on
 
 # Always float these applications
 yabai -m rule --add app="^Finder$" sticky=on layer=above manage=off
-yabai -m rule --add app="^Calculator$" sticky=on layer=above manage=off
+yabai -m rule --add app="^Calculator$" manage=off
 yabai -m rule --add app="^OpenVPN Connect$" sticky=on layer=above manage=off
 yabai -m rule --add app="^System Settings$" sticky=on layer=above manage=off
 
