@@ -18,5 +18,5 @@ yabai -m rule --add app="^Calculator$" manage=off
 yabai -m rule --add app="^OpenVPN Connect$" sticky=on layer=above manage=off
 yabai -m rule --add app="^System Settings$" sticky=on layer=above manage=off
 
-# Always float popup settings menus
+# Catch-all always float an Applications popup settings menu
 yabai -m rule --add title="^Settings$" sticky=on layer=above manage=off
