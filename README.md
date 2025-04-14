@@ -59,6 +59,8 @@ be bound to something else.
 - set Chrome theme to gtk+ to use same gtk theme
 
 ## Mac
+- DefaultKeyBinding.dict copied to ~/Library/KeyBindings/DefaultKeyBinding.dict
+  - Stops ctrl+v acting as page down in some applications!
 - (`yabai` and `skhd`) OR aerospace for window manager
 - `Alacritty` for terminal
 - `shottr` for screenshots
