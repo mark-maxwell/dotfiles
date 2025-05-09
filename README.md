@@ -29,9 +29,11 @@
 ## Aerospace
 - Symlink aerospace.toml to ~/.config/aerospace/aerospace.toml
 - Start via standard Mac spotlight application search
+NOTE: Make sure skhd is not running as the keyboard shortcuts will be intercepted.
 
 ### skhd
 - Symlink skhdrc to ~/.config/skhd/skhdrc
+- `skhd --stop-service`
 
 ## Tmux
 - Symlink tmux.conf to ~/.tmux.conf
