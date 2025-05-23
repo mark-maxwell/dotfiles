@@ -77,7 +77,7 @@ GTURQ="\[\033[38;5;50m\]"
 ORANGE="\[\033[38;5;202m\]"
 
 export PS1="\n $BLUE\t $PURPLE\w$MAGENTA\$(ruby_prompt)$LPURPLE\$(parse_git_branch)$PURPLE ∫\[\033[0m\] "
-export EDITOR=vim
+export EDITOR=nvim
 
 # change ls command directory color
 LS_COLORS=$LS_COLORS:'di=1;35:' ; export LS_COLORS
