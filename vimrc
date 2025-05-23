@@ -190,9 +190,8 @@ inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm()
 map <Leader>e :Explore<CR>
 
 "" Misc. mappings
-"map <Leader>f :!clear<CR>:Ack! <cword>*<CR>
-"map <Leader>f :!clear<CR>:Ag <C-R><C-W><CR><CR>
 map <Leader>f :Ag<CR>
+map <Leader>F :Ag <C-R><C-W><CR>
 map <Leader>g :!clear<CR>:grep --color <cword>*<CR>
 map <Leader>G :Git blame<CR>
 map <Leader>p "*p<CR>
